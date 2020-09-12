@@ -35,6 +35,6 @@ Ingresar a ```http://localhost/proyecto/index.html```
 #### Herramientas
 
 - [Trello para la gestion de las tareas](https://trello.com) https://trello.com/b/0k2NUPRj/equipo11-pi-dh
-- Figma: 
+- [Figma para wireframe](https://figma.com)
 - XAMPP, servidor local de PHP y MySQL
 
