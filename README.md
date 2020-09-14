@@ -20,7 +20,7 @@ Redes sociales: (Multiregion, la indumentaria no es un componente especializado)
 .
 
 ###### Alexis Gonzalez 
-.
+Tengo 21 años, me encanta todo lo relacionado a la tecnología, especialmente hardware y software. No tengo experiencia profesional de ningun tipo pero he ayudado a amigos en sus proyectos usando javascript.
 
 ###### Guillermo Dominguez
 Con 2 hijos,uno estudiando y viviendo en España. Me fascina todo lo referido a innovar en productos y servicios, con experiencia en startup de emprendimientos y participacion en concursos. En relacion de dependencia, siempre he estado vinculado a multinacionales en la areas de gestion de proyectos y servicios de IT.  
