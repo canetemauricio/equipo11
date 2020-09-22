@@ -17,6 +17,8 @@ Redes sociales: (Multiregion, la indumentaria no es un componente especializado)
 ## Participantes
 
 ###### Mauricio Cañete 
+
+De 28 años. Técnico en Programación y empleado Bancario. Defensor de la voz del cliente como centro de todo desarrollo. Con experiencia en desarrollo UX/UI y community Management y heavy user de la mayoría de las plataformas digitales del mercado. 
 .
 
 ###### Alexis Gonzalez 
