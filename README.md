@@ -1,12 +1,21 @@
 # Grupo 1 - MAG
 
-Este proyecto se trata de **un ecommerce** orientado a personas interesadas ***en vender cualquier producto de indumentaria nueva y usada*** Cuando comenzamos a planificar este proyecto descubrimos que ***existe una oportunidad para ofrecer un marketplace especializado para la comercializacion de todo tipo de indumentaria, donde podremos brindar  herramientas y servicios que nos diferenciaran de los actuales canales de venta digitales utilizados como MercadoLibre o redes sociales***. En esta aplicacion los usuarios podran ***vender y comprar productos de indumentaria nuevos o usados, podran destacar sus productos, crear showrooms, dar a conocer su oferta y condiciones, asi como crear material multimedial que soporte a su venta, o delegarnos la logitica de entrega***. En el futuro queremos expandir este desarrollo y lograr ***llevar la misma solucion a otros mercados Latam e identificar que otra clase o familia de productos estan lo suficientemente maduros que requieran expandir nuestra actual oferta***.
+Este proyecto se trata de **un ecommerce** orientado a personas interesadas ***en vender,comprar o canjear cualquier producto de indumentaria nueva y usada*** Cuando comenzamos a planificar este proyecto descubrimos que ***existe una oportunidad para ofrecer un marketplace especializado para la comercializacion de todo tipo de indumentaria, donde podremos brindar servicios y mejores metodos de valor para la venta, diferenciandonos de los actuales canales utilizados por los usuarios como MercadoLibre o redes sociales ***. En esta aplicacion los usuarios podran ***vender, comprar o canjear productos de indumentaria nuevos o usados, podran destacar sus productos, crear showrooms, dar a conocer su oferta y condiciones, asi como crear material multimedial que soporte a su venta, delegandonos las operaciones de puesta en valor y venta ***. En el futuro queremos expandir este desarrollo y lograr ***llevar la misma solucion a otros mercados Latam e identificar que otra clase o familia de productos estan lo suficientemente maduros que requieran expandir nuestra actual oferta***.
+En lineas generales, la empresa sera quien se encargue de buscar, vender e intermediar los productos del vendedor con el comprador. El vendedor debera registrase en el sitio, y una vez verificado que los productos cumplen los requisitos de calidad minimos, estos ingresaran al stock de la empresa, el vendedor obtendra un credito virtual por el valor de las prendas o lote de productos y a medida que se vayan vendiendo, este credito se ira monetizando en pesos en la cuenta del vendedor.   
 
 **Competidores directos y oportunidad detectada:** 
 
 https://www.vinted.es/ (Origen España, sin presencia en Argentina)
 
 https://www.renovatuvestidor.com/ (Origen Argentina, orientado al publico femenino)
+
+https://www.thredup.com/
+
+https://poshmark.com/
+
+https://www.tradesy.com/
+
+https://www.bacan.com.ar/
 
 https://www.mercadolibre.com.ar/ (Multiregion, la indumentaria no es un componente especializado) 
 
@@ -17,8 +26,6 @@ Redes sociales: (Multiregion, la indumentaria no es un componente especializado)
 ## Participantes
 
 ###### Mauricio Cañete 
-
-De 28 años. Técnico en Programación y empleado Bancario. Defensor de la voz del cliente como centro de todo desarrollo. Con experiencia en desarrollo UX/UI y community Management y heavy user de la mayoría de las plataformas digitales del mercado. 
 .
 
 ###### Alexis Gonzalez 
