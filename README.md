@@ -13,8 +13,8 @@ En el futuro queremos expandir este desarrollo y lograr llevar la misma solucion
 
 **Competidores directos y oportunidad detectada:** 
 
-https://www.vinted.es/ 
-Es un ecomerce lider para la venta de ropa nueva y usada en España y no tiene presencia en latinoamerica. Dado que ya tienen tiempo en el mercado, nos parece optimo usarlo de guia de cómo presentar los productos y la interaccion con los usuarios. 
+* https://www.vinted.es/ 
+  Es un ecomerce lider para la venta de ropa nueva y usada en España y no tiene presencia en latinoamerica. Dado que ya tienen tiempo en el mercado, nos parece optimo usarlo de   guia de cómo presentar los productos y la interaccion con los usuarios. 
 
 
 https://www.renovatuvestidor.com/ 
