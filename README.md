@@ -1,24 +1,25 @@
 # Grupo 1 - MAG
 
 Este proyecto se trata de **un ecommerce** orientado a personas interesadas ***en vender,comprar o canjear cualquier producto de indumentaria nueva y usada***.
-Cuando comenzamos a planificar este proyecto descubrimos que existe una oportunidad para ofrecer un marketplace especializado para la comercializacion de todo tipo de indumentaria, donde podremos brindar mas servicios y mejores metodos de valor para la venta, diferenciandonos de los actuales canales utilizados por los usuarios como MercadoLibre o redes sociales. 
-En lineas generales, la empresa sera quien se encargue de vender e intermediar los productos del vendedor con el comprador. El vendedor debera registrase en el sitio, y una vez verificado que los productos cumplen los requisitos de calidad minimos, estos seran retirados por la empresa e ingresaran a su stock para ser preparados y publicados. En contra prestacion, el vendedor obtendra un credito virtual por el valor de las prendas o lote de productos que entrega en consignacion, y a medida que se vayan vendiendo, este credito se ira monetizando en pesos en la cuenta del vendedor.
-La propuesta de valor para el vendedor, tiene varias aristas: Por un lado, se asegura de obtener la ganancia que espera con un minimo esfuerzo de venta, y/o puede acceder a otros bienes de indumentaria al aplicar el credito obtenido en consignaion.
-Para el comprador, no solo accedera a un sitio que le permitira buscar la mejor relacion costo/calidad, sino tambien que dispondra de sugerencias asistidas para estimular su compra.
-La empresa obtiene ganancias en obtener mejores reditos en ventas unitarias de los productos en custodia, asi como tambien en los servicios que ofrecera a los vendedores para estimular las operaciones. Por ejemplo: destacando sus productos, creando showrooms, dar a conocer su oferta y condiciones, asi como creando material multimedial que soporte a su venta. 
+Cuando comenzamos a planificar este proyecto, descubrimos que existe una oportunidad para ofrecer un marketplace especializado para la comercialización de todo tipo de indumentaria, donde podremos brindar mas servicios y mejores métodos de valor para la venta, diferenciandonos de los actuales canales utilizados por los usuarios como MercadoLibre o redes sociales. 
+En lineas generales, la empresa será quien se encargue de vender e intermediar los productos del vendedor con el comprador. El vendedor deberá registrase en el sitio, y una vez verificado que los productos cumplen los requisitos de calidad mínimos, estos serán retirados por la empresa e ingresaran a su stock para ser preparados y publicados. En contra prestación, el vendedor obtendrá un crédito virtual por el valor de las prendas o lote de productos que entrega en consignación, y a medida que se vayan vendiendo, este crédito se ira monetizando en pesos en la cuenta del vendedor.
+La propuesta de valor para el vendedor, tiene varias aristas: Por un lado, se asegura de obtener la ganancia que espera con un mínimo esfuerzo de venta, y/o puede acceder a otros bienes de indumentaria al aplicar el credito obtenido en consignaión.
+Para el comprador, no solo accederá a un sitio que le permitirá buscar la mejor relacion costo/calidad, sino también que dispondra de sugerencias asistidas para estimular su compra.
+La empresa obtiene ganancias en obtener mejores réditos en ventas unitarias de los productos en custodia, asi como también en los servicios que ofrecera a los vendedores para estimular las operaciones. Por ejemplo: destacando sus productos, creando showrooms, dar a conocer su oferta y condiciones, asi como creando material multimedial que soporte a su venta. 
 
-En el futuro queremos expandir este desarrollo y lograr llevar la misma solucion a otros mercados Latam y/o identificar que otra clase o familia de productos estan lo suficientemente maduros que requieran expandir nuestra actual oferta. Tambien vemos factible complementar la oferta con accesorios de moda, directamente comercializados por la empresa.
+En el futuro queremos expandir este desarrollo y lograr llevar la misma solución a otros mercados Latam y/o identificar que otra clase o familia de productos estan lo suficientemente maduros que requieran expandir nuestra actual oferta. También vemos factible complementar la oferta con accesorios de moda, directamente comercializados por la empresa.
 
 
 
 **Competidores directos y oportunidad detectada:** 
 
 * https://www.vinted.es/ 
-  Es un ecomerce lider para la venta de ropa nueva y usada en España y no tiene presencia en latinoamerica. Dado que ya tienen tiempo en el mercado, nos parece optimo usarlo de   guia de cómo presentar los productos y la interaccion con los usuarios. 
+  Es un ecomerce líder para la venta de ropa nueva y usada en España y no tiene presencia en latinoamerica. Dado que ya tienen tiempo en el mercado, nos parece óptimo 
+  para usarlo de guia de cómo presentar los productos y la interaccion con los usuarios. 
 
 
 * https://www.renovatuvestidor.com/ 
-  Este sitio de origen local, es la version Argentina de www.vinted.es con foco en el mercado femenino. Nos parece interesante como han agiornado la oferta a nuestro mercado,     tambien destacamos que tiene 300k seguidores sin competidores directos. Entendemos que seremos su competencia directa, asi que tambien es clave para nosotros captar el
+  Este sitio de origen local, es la versión Argentina de www.vinted.es con foco en el mercado femenino. Nos parece interesante como han agiornado la oferta a nuestro mercado,     también destacamos que tiene 300k seguidores sin competidores directos. Entendemos que seremos su competencia directa, así que también es clave para nosotros captar el
   recorrido de aprendizaje y experiencia con los usuarios para ser incorporado en el diseño del sitio. Consideramos que nuestra oferta es superadora, dado que incorporaremos el
   mercado masculino, el concepto de intercambio y el pick up de las prendas para acelerar las ventas.
 
