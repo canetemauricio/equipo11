@@ -71,6 +71,6 @@ Ingresar a ```http://localhost/proyecto/index.html```
 
 - [Trello para la gestion de las tareas] https://trello.com) https://trello.com/b/0k2NUPRj/equipo11-pi-dh
 - [Whimsical para flujos de procesos] https://whimsical.com/38FZ2KPNQh1HVh8UtfaiLs@2Ux7TurymLAXyuRPohdn
-- [XXXXXXXXXXXX para wireframe]
+- [Adobe XD] https://xd.adobe.com/view/562e5986-0fce-49ed-93d9-bfc9c2fa3775-037d/
 - XAMPP, servidor local de PHP y MySQL
 
