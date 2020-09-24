@@ -17,24 +17,34 @@ En el futuro queremos expandir este desarrollo y lograr llevar la misma solucion
   Es un ecomerce lider para la venta de ropa nueva y usada en España y no tiene presencia en latinoamerica. Dado que ya tienen tiempo en el mercado, nos parece optimo usarlo de   guia de cómo presentar los productos y la interaccion con los usuarios. 
 
 
-https://www.renovatuvestidor.com/ 
-Este sitio de origen local, es la version Argentina de www.vinted.es con foco en el mercado femenino. Nos parece interesante como han agiornado la oferta a nuestro mercado, tambien destacamos que tiene 300k seguidores sin competidores directos. Entendemos que seremos su competencia directa, asi que tambien es clave para nosotros captar el recorrido de aprendizaje y experiencia con los usuarios para ser incorporado en el diseño del sitio. Consideramos que nuestra oferta es superadora, dado que incorporaremos el mercado masculino, el concepto de intercambio y el pick up de las prendas para acelerar las ventas.
+* https://www.renovatuvestidor.com/ 
+  Este sitio de origen local, es la version Argentina de www.vinted.es con foco en el mercado femenino. Nos parece interesante como han agiornado la oferta a nuestro mercado,     tambien destacamos que tiene 300k seguidores sin competidores directos. Entendemos que seremos su competencia directa, asi que tambien es clave para nosotros captar el
+  recorrido de aprendizaje y experiencia con los usuarios para ser incorporado en el diseño del sitio. Consideramos que nuestra oferta es superadora, dado que incorporaremos el
+  mercado masculino, el concepto de intercambio y el pick up de las prendas para acelerar las ventas.
 
 
-https://www.thredup.com/
-Este sitio es de Estados Unidos y no tiene presencia en latinoamerica. Se asemeja mucho a nuestra propuesta de negocios, dado que no solo comercializan indumentaria nueva y usada sino que tambien realizan el pick up de los productos de los vendedores, un factor que nos diferencia de las ofertas anteriores y que necesitareos aprender y capitalizar en nuestro negocio. Nos diferenciaremos en 2 elementos claves: este sitio esta enfocado exclusivamennte en indumentaria femenina y niños; y tambien en que enfatizan en la donacion de indumentaria (este concepto no lo incorporaremos en el sitio).   
+* https://www.thredup.com/
+  Este sitio es de Estados Unidos y no tiene presencia en latinoamerica. Se asemeja mucho a nuestra propuesta de negocios, dado que no solo comercializan indumentaria nueva y
+  usada sino que tambien realizan el pick up de los productos de los vendedores, un factor que nos diferencia de las ofertas anteriores y que necesitareos aprender y capitalizar
+  en nuestro negocio. Nos diferenciaremos en 2 elementos claves: este sitio esta enfocado exclusivamennte en indumentaria femenina y niños; y tambien en que enfatizan en la
+  donacion de indumentaria (este concepto no lo incorporaremos en el sitio).   
 
 
-https://www.bacan.com.ar/
-Este sitio local esta orientado a asistir a los usuarios que desean adquirir indumentaria, asesorandolos en diversos mix de productos que comercializan. Es lo mas parecido a un personal shopper virtual. Nos interesa de este sitio su modelo de asistencia, porque vamos a incorporar en nuestra oferta la asistencia combinando los distintos productos a la venta que tendremos en el stock. 
+* https://www.bacan.com.ar/
+  Este sitio local esta orientado a asistir a los usuarios que desean adquirir indumentaria, asesorandolos en diversos mix de productos que comercializan. Es lo mas parecido a
+  un personal shopper virtual. Nos interesa de este sitio su modelo de asistencia, porque vamos a incorporar en nuestra oferta la asistencia combinando los distintos productos a
+  la venta que tendremos en el stock. 
 
 
-https://poshmark.com/
-Este sitio de Estados Unidos, es de compra y venta de indumentaria nueva y usada para los mercados masculinos y femeninos. Nos inspira la simpleza y el alcance, incorporaremos estos conceptos de simplificacion.  
+* https://poshmark.com/
+  Este sitio de Estados Unidos, es de compra y venta de indumentaria nueva y usada para los mercados masculinos y femeninos. Nos inspira la simpleza y el alcance, incorporaremos
+  estos conceptos de simplificacion.  
 
 
-https://www.mercadolibre.com.ar/ (Multiregion, la indumentaria no es un componente especializado) 
-MercadoLibre no es un sitio especializado para este tipo de producto, y su oferta esta orientada al precio. Sin embargo, gran parte del publico target al que asistiremos, estan familiarizados con la experiencia de compra que ofrecen. Para reducir la curva de aprendizaje de los nuevos usuarios, incorporaremos la forma de operar e interactuar para la venta, compra, calificacion y consultas. Tambien captaremos lo relativo a presentacion de precios y medios de pago.
+* https://www.mercadolibre.com.ar/ (Multiregion, la indumentaria no es un componente especializado) 
+  MercadoLibre no es un sitio especializado para este tipo de producto, y su oferta esta orientada al precio. Sin embargo, gran parte del publico target al que asistiremos,
+  estan familiarizados con la experiencia de compra que ofrecen. Para reducir la curva de aprendizaje de los nuevos usuarios, incorporaremos la forma de operar e interactuar
+  para la venta, compra, calificacion y consultas. Tambien captaremos lo relativo a presentacion de precios y medios de pago.
 
 
  
