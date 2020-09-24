@@ -3,8 +3,9 @@
 Este proyecto se trata de **un ecommerce** orientado a personas interesadas ***en vender,comprar o canjear cualquier producto de indumentaria nueva y usada***.
 Cuando comenzamos a planificar este proyecto descubrimos que existe una oportunidad para ofrecer un marketplace especializado para la comercializacion de todo tipo de indumentaria, donde podremos brindar mas servicios y mejores metodos de valor para la venta, diferenciandonos de los actuales canales utilizados por los usuarios como MercadoLibre o redes sociales. 
 En lineas generales, la empresa sera quien se encargue de vender e intermediar los productos del vendedor con el comprador. El vendedor debera registrase en el sitio, y una vez verificado que los productos cumplen los requisitos de calidad minimos, estos seran retirados por la empresa e ingresaran a su stock para ser preparados y publicados. En contra prestacion, el vendedor obtendra un credito virtual por el valor de las prendas o lote de productos que entrega en consignacion, y a medida que se vayan vendiendo, este credito se ira monetizando en pesos en la cuenta del vendedor.
-La propuesta de valor para el vendedor, tiene varias aristas: Por un lado, se asegura de obtener la ganancia que espera con un minimo esfuerzo de venta, y/o puede acceder a otros bienes de indumentaria al aplicar el credito obtenido en consignaion.   
-La empresa obtiene ganancias en obtener mejores reditos en ventas unitarias de los productos en custodia, asi como tambien en los servicios que ofrecera a los vendedores para estimular las operaciones. Por ejemplo: destacando sus productos, crear showrooms, dar a conocer su oferta y condiciones, asi como crear material multimedial que soporte a su venta. Para el comprador, se presentaran opciones, mix de productos y sugerencias asistidas para estimular su compra.
+La propuesta de valor para el vendedor, tiene varias aristas: Por un lado, se asegura de obtener la ganancia que espera con un minimo esfuerzo de venta, y/o puede acceder a otros bienes de indumentaria al aplicar el credito obtenido en consignaion.
+Para el comprador, no solo accedera a un sitio que le permitira buscar la mejor relacion costo/calidad, sino tambien que dispondra de sugerencias asistidas para estimular su compra.
+La empresa obtiene ganancias en obtener mejores reditos en ventas unitarias de los productos en custodia, asi como tambien en los servicios que ofrecera a los vendedores para estimular las operaciones. Por ejemplo: destacando sus productos, creando showrooms, dar a conocer su oferta y condiciones, asi como creando material multimedial que soporte a su venta. 
 
 En el futuro queremos expandir este desarrollo y lograr llevar la misma solucion a otros mercados Latam y/o identificar que otra clase o familia de productos estan lo suficientemente maduros que requieran expandir nuestra actual oferta. Tambien vemos factible complementar la oferta con accesorios de moda, directamente comercializados por la empresa.
 
@@ -15,24 +16,27 @@ En el futuro queremos expandir este desarrollo y lograr llevar la misma solucion
 https://www.vinted.es/ 
 Es un ecomerce lider para la venta de ropa nueva y usada en España y no tiene presencia en latinoamerica. Dado que ya tienen tiempo en el mercado, nos parece optimo usarlo de guia de cómo presentar los productos y la interaccion con los usuarios. 
 
+
 https://www.renovatuvestidor.com/ 
-Este sitio de origen local, es la version Argentina de www.vinted.es con foco en el mercado femenino. Nos parece interesante como han agiornado la oferta a nuestro mercado, tambien destacamos que tiene 300k seguidores sin competidores directos. Entendemos que seremos su competencia directa, asi que tambien es clave para nosotros captar el recorrido de aprendizaje y experiencia con los usuarios. Consideramos que nuestra oferta es superadora, dado que incorporaremos el mercado masculino, el concepto de intercambio y el pick up de las prendas para acelerar las ventas.
+Este sitio de origen local, es la version Argentina de www.vinted.es con foco en el mercado femenino. Nos parece interesante como han agiornado la oferta a nuestro mercado, tambien destacamos que tiene 300k seguidores sin competidores directos. Entendemos que seremos su competencia directa, asi que tambien es clave para nosotros captar el recorrido de aprendizaje y experiencia con los usuarios para ser incorporado en el diseño del sitio. Consideramos que nuestra oferta es superadora, dado que incorporaremos el mercado masculino, el concepto de intercambio y el pick up de las prendas para acelerar las ventas.
+
 
 https://www.thredup.com/
-Este sitio es de Estados Unidos y no tiene presencia en latinoamerica. Se asemeja mucho a nuestra propuesta de negocios, dado que no solo comercializan indumentaria nueva y usada sino que tambien realizan el pick up de los productos de los vendedores, un factor que nos diferencia de las ofertas anteriores y que necesitareos aprender y capitalizar en nuestro negocio. Nos diferenciaremos es 2 elementos: este sitio esta enfocado exclusivamennte en indumentaria femenina y niños; y tambien en que enfatizan en la donacion de indumentaria (este concepto no lo incorporaremos en el sitio).   
+Este sitio es de Estados Unidos y no tiene presencia en latinoamerica. Se asemeja mucho a nuestra propuesta de negocios, dado que no solo comercializan indumentaria nueva y usada sino que tambien realizan el pick up de los productos de los vendedores, un factor que nos diferencia de las ofertas anteriores y que necesitareos aprender y capitalizar en nuestro negocio. Nos diferenciaremos en 2 elementos claves: este sitio esta enfocado exclusivamennte en indumentaria femenina y niños; y tambien en que enfatizan en la donacion de indumentaria (este concepto no lo incorporaremos en el sitio).   
+
 
 https://www.bacan.com.ar/
 Este sitio local esta orientado a asistir a los usuarios que desean adquirir indumentaria, asesorandolos en diversos mix de productos que comercializan. Es lo mas parecido a un personal shopper virtual. Nos interesa de este sitio su modelo de asistencia, porque vamos a incorporar en nuestra oferta la asistencia combinando los distintos productos a la venta que tendremos en el stock. 
 
-https://poshmark.com/
 
-https://www.tradesy.com/
+https://poshmark.com/
+Este sitio de Estados Unidos, es de compra y venta de indumentaria nueva y usada para los mercados masculinos y femeninos. Nos inspira la simpleza y el alcance, incoroporaremos con conceptos de simplificacion.  
 
 
 https://www.mercadolibre.com.ar/ (Multiregion, la indumentaria no es un componente especializado) 
+MercadoLibre no es un sitio especializado para este tipo de producto, y su oferta esta orientada al precio. Sin embargo, gran parte del publico target al que asistiremos, estan familiarizados con la experiencia de compra que ofrecen. Para reducir la curva de aprendizaje de los nuevos usuarios, incorporaremos la forma de operar e interactuar para la venta, compra, calificacion y consultas. Tambien captaremos lo relativo a presentacion de precios y medios de pago.
 
-Redes sociales: (Multiregion, la indumentaria no es un componente especializado)  
- 
+
  
 
 ## Participantes
@@ -65,8 +69,8 @@ Ingresar a ```http://localhost/proyecto/index.html```
 
 #### Herramientas
 
-- [Trello para la gestion de las tareas](https://trello.com) https://trello.com/b/0k2NUPRj/equipo11-pi-dh
-
-- [Figma para wireframe]
+- [Trello para la gestion de las tareas] https://trello.com) https://trello.com/b/0k2NUPRj/equipo11-pi-dh
+- [Whimsical para flujos de prcesos] https://whimsical.com/38FZ2KPNQh1HVh8UtfaiLs@2Ux7TurymLAXyuRPohdn
+- [XXXXXXXXXXXX para wireframe]
 - XAMPP, servidor local de PHP y MySQL
 
