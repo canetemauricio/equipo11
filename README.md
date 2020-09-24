@@ -1,13 +1,25 @@
 # Grupo 1 - MAG
 
-Este proyecto se trata de **un ecommerce** orientado a personas interesadas ***en vender,comprar o canjear cualquier producto de indumentaria nueva y usada*** Cuando comenzamos a planificar este proyecto descubrimos que ***existe una oportunidad para ofrecer un marketplace especializado para la comercializacion de todo tipo de indumentaria, donde podremos brindar servicios y mejores metodos de valor para la venta, diferenciandonos de los actuales canales utilizados por los usuarios como MercadoLibre o redes sociales ***. En esta aplicacion los usuarios podran ***vender, comprar o canjear productos de indumentaria nuevos o usados, podran destacar sus productos, crear showrooms, dar a conocer su oferta y condiciones, asi como crear material multimedial que soporte a su venta, delegandonos las operaciones de puesta en valor y venta ***. En el futuro queremos expandir este desarrollo y lograr ***llevar la misma solucion a otros mercados Latam e identificar que otra clase o familia de productos estan lo suficientemente maduros que requieran expandir nuestra actual oferta***.
-En lineas generales, la empresa sera quien se encargue de buscar, vender e intermediar los productos del vendedor con el comprador. El vendedor debera registrase en el sitio, y una vez verificado que los productos cumplen los requisitos de calidad minimos, estos ingresaran al stock de la empresa, el vendedor obtendra un credito virtual por el valor de las prendas o lote de productos y a medida que se vayan vendiendo, este credito se ira monetizando en pesos en la cuenta del vendedor.   
+Este proyecto se trata de **un ecommerce** orientado a personas interesadas ***en vender,comprar o canjear cualquier producto de indumentaria nueva y usada***.
+Cuando comenzamos a planificar este proyecto descubrimos que ***existe una oportunidad para ofrecer un marketplace especializado para la comercializacion de todo tipo de indumentaria, donde podremos brindar mas servicios y mejores metodos de valor para la venta, diferenciandonos de los actuales canales utilizados por los usuarios como MercadoLibre o redes sociales ***. En lineas generales, la empresa sera quien se encargue de vender e intermediar los productos del vendedor con el comprador. El vendedor debera registrase en el sitio, y una vez verificado que los productos cumplen los requisitos de calidad minimos, estos seran retirados por la empresa e ingresaran a su stock para ser preparados y publicados. En contra prestacion, el vendedor obtendra un credito virtual por el valor de las prendas o lote de productos que entrega en consignacion, y a medida que se vayan vendiendo, este credito se ira monetizando en pesos en la cuenta del vendedor.
+La propuesta de valor para el vendedor, tiene varias aristas: Por un lado, se asegura de obtener la ganancia que espera con un minimo esfuerzo de venta, y/o puede acceder a otros bienes de indumentaria al aplicar el credito obtenido en consignaion.   
+La empresa obtiene ganancias en obtener mejores reditos en ventas unitarias de los productos en custodia, asi como tambien en los servicios que ofrecera a los vendedores para estimular las operaciones. Por ejemplo: destacando sus productos, crear showrooms, dar a conocer su oferta y condiciones, asi como crear material multimedial que soporte a su venta.
+En el futuro queremos expandir este desarrollo y lograr ***llevar la misma solucion a otros mercados Latam y/o identificar que otra clase o familia de productos estan lo suficientemente maduros que requieran expandir nuestra actual oferta***.
+
+
 
 **Competidores directos y oportunidad detectada:** 
 
-https://www.vinted.es/ (Origen España, sin presencia en Argentina)
+https://www.vinted.es/ 
+Es un ecomerce lider para la venta de ropa nueva y usada en España y no tiene presencia en latinoamerica. Dado que ya tienen tiempo en el mercado, nos parece optimo usarlo de guia para como presentar los productos y la interaccion de los usuarios, 
 
 https://www.renovatuvestidor.com/ (Origen Argentina, orientado al publico femenino)
+
+
+
+, donde seguramente ya han recorrido un camino de aprendizaja de experienciacon la interaccion de los usuarios 
+
+
 
 https://www.thredup.com/
 
@@ -54,6 +66,7 @@ Ingresar a ```http://localhost/proyecto/index.html```
 #### Herramientas
 
 - [Trello para la gestion de las tareas](https://trello.com) https://trello.com/b/0k2NUPRj/equipo11-pi-dh
-- [Figma para wireframe](https://figma.com)
+
+- [Figma para wireframe]
 - XAMPP, servidor local de PHP y MySQL
 
