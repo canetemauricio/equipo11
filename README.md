@@ -30,7 +30,7 @@ Este sitio local esta orientado a asistir a los usuarios que desean adquirir ind
 
 
 https://poshmark.com/
-Este sitio de Estados Unidos, es de compra y venta de indumentaria nueva y usada para los mercados masculinos y femeninos. Nos inspira la simpleza y el alcance, incoroporaremos con conceptos de simplificacion.  
+Este sitio de Estados Unidos, es de compra y venta de indumentaria nueva y usada para los mercados masculinos y femeninos. Nos inspira la simpleza y el alcance, incorporaremos estos conceptos de simplificacion.  
 
 
 https://www.mercadolibre.com.ar/ (Multiregion, la indumentaria no es un componente especializado) 
