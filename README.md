@@ -42,7 +42,7 @@ MercadoLibre no es un sitio especializado para este tipo de producto, y su ofert
 ## Participantes
 
 ###### Mauricio Cañete 
-.
+28 años, técnico en programación y empleado bancario. Defensor de poner al usuario como centro de todo desarrollo. Aficionado a la tecnología, experiencia en Community Managment y diseño de videjuegos. 
 
 ###### Alexis Gonzalez 
 Tengo 21 años, me encanta todo lo relacionado a la tecnología, especialmente hardware y software. No tengo experiencia profesional de ningun tipo pero he ayudado a amigos en sus proyectos usando javascript.
