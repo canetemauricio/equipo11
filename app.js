@@ -32,12 +32,19 @@ app.get('/login', function (req,res){
     res.sendFile(file)
 })
 
+app.get('*', function(req,res){
+
+    if(req.url.includes('.')){
+        let file = path.resolve('public'+req.url)
+        return res.sendFile(file)
+    }
+    
+    })
 
 
 
 
-
-
+ 
 
 
 
