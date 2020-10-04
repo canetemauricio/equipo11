@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{font-size: 11px;}
+
+header{
+    background-color: #d3d3d3;
+    height: 60px;
+}
+
+.productinfo{
+height: 600px;
+background-color: gold;
+justify-content: space-around;
+width: 95%;
+margin: 1% auto;
+padding: 1%;
+flex-wrap: wrap
+;
+
+}
+
+.imagen{
+    height: 570px;
+    background-color: grey;
+    width: 60%;
+    
+}
+
+.producto{
+    height: 570px;
+    background-color: red;
+    width:40%;
+    text-align: center;
+}
+
+.masfotos{
+    margin-left: 10%;
+}
+
+.d-flex{display: flex;}
+flex-row{flex-direction: row;}
