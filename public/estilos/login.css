@@ -1,7 +1,7 @@
 
 *{
     margin:0;
-    padding: 15;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Noto Sans', sans-serif;
     color: #3d3d3d;
@@ -10,3 +10,13 @@
 p{
     font-size: 12px;
 }
+
+div{
+   
+}
+
+
+#red{background-color: red;}
+#blue{background-color: blue;}
+
+.flex{display: flex; flex-direction: column; align-items: center;}
