@@ -24,17 +24,27 @@ a {
 
 .barra-contain {
   background-color: rgb(231, 228, 228);
-  padding: 65px;
-  font-size: 25px;
+  padding: 3vh;
+  font-size: 22px;
 }
 
 .icons {
   padding: 0px;
-  font-size: 45px;
+  font-size: 24px;
 }
 
 .bolded {
   font-weight: 600;
+}
+
+.section1{
+  width: 32%;
+  font-size: 18px;
+  
+}
+
+.section3{
+  margin-left: 10%;
 }
 
 .barra-contain a {
@@ -47,7 +57,7 @@ a {
 }
 
 .first-bg {
-  background-image: url("first-bg-placeholder.png");
+  background-image: url("/imagenes/first-bg-placeholder.png");
   height: 1000px;
 }
 
