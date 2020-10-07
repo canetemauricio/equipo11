@@ -1,0 +1,91 @@
+
+*{
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #eaeaea;
+    text-decoration: none; 
+    color: #3d3d3d
+}
+body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+.login{
+    width: 25%;
+    background-color: #eaeaea;
+    margin:50px auto;
+    border: 2px solid #3d3d3d ;
+    box-shadow: 0px 10px 7px -2px rgba(0,0,0,0.25);
+}
+ 
+.login-box{
+    width: 90%;np
+    padding: 10px ;
+    margin: 0 auto;
+     
+}
+
+h1{
+    font-size: 18px ;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+    background-color: #eaeaea;
+    width: 80%;
+    font-size: 12px;  
+    padding: 5px;
+    border:none
+
+}
+
+input:focus{
+    outline: none;
+}
+
+.check input:checked{ 
+    background-color: #3d3d3d;
+}
+
+.login-input{
+ margin-bottom: 20px;
+ border: 2px solid #aaa;
+
+}
+
+.fas{
+    margin-left: 10px;
+    text-align: center;
+    color: #3d3d3d;
+}
+
+.Remember{
+    margin-top: -10px;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+input[type="checkbox"]:checked{ 
+    background-color: #3d3d3d
+}
+    
+
+.button{
+    border: none;
+    width: 100%;
+    color: #eaeaea;
+    font-size: 14px;
+    background-color: #3d3d3d;
+    padding: 10px;
+    border-radius: 5px;
+    cursor:pointer;
+    margin-bottom: 10px;
+}
+
+p{
+    font-weight: 600;
+    font-size: 12px;
+}
