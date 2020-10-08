@@ -66,13 +66,13 @@ Soy Diseñador Industrial, Ingeniero Comercial y tengo una maestria en direccion
 
 ## Instalacion
 
-```git clone https://github.com/canetemauricio/equipo11/README.md```
+```git clone https://github.com/canetemauricio/equipo11/```
 
 
 
 ## Utilizacion
 
-Ingresar a ```http://localhost/proyecto/index.html``` 
+Ingresar a ```http://localhost:3000/``` 
 
 
 
