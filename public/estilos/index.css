@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
 }
 
 header {
@@ -19,8 +19,20 @@ a {
   display: flex;
 }
 
+.w-100 {
+  width: 100%;
+}
+
+.auto-w {
+  width: auto;
+}
+
 .space-bet {
   justify-content: space-between;
+}
+
+.space-ar {
+  justify-content: space-around;
 }
 
 .barra-contain {
@@ -39,13 +51,12 @@ a {
   font-weight: 600;
 }
 
-.section1{
+.section1 {
   width: 32%;
   font-size: 18px;
-  
 }
 
-.section3{
+.section3 {
   margin-left: 10%;
 }
 
@@ -63,29 +74,36 @@ a {
   height: 1000px;
 }
 
-.center {
-  padding: 75px 75px 30px 75px;
+.title {
   justify-content: center;
   font-weight: bold;
-  font-size: 60px;
+  font-size: 50px;
   text-align: center;
 }
 
-.parag {
-  font-size: 20px;
+.padding-title-1 {
+  padding: 75px 75px 0px 75px;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.paragraph {
+  font-size: 20;
+  margin: 1.5% 30%;
   text-align: center;
-  padding: 0% 30%;
 }
 
-.img-varias {
-  padding: 2%;
-  justify-content: space-around;
+.margin-img {
+  margin: 1% 8%;
 }
 
-.img-varias img {
-  width: 150%;
-}
-
-.promocionados {
+.bg-lgray {
   background-color: lightgray;
 }
