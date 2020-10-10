@@ -105,3 +105,18 @@ a {
 .bg-lgray {
   background-color: lightgray;
 }
+
+footer {
+  background-color: rgb(243, 243, 243);
+  padding: 7%;
+}
+
+.f-title {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.f-parag {
+  padding: 1.5% 0%;
+  width: 20%;
+}
