@@ -12,52 +12,49 @@
         copiar del header
     </div>
 
-    <main>
-
-        <div class="Titulo-Carrito">
-            <br>   
-            <p><div class="Texto-Sombra Texto-Carrito">CARRITO DE COMPRAS</div></p>
-            <br>
-        </div>
-     
-        <div class="Fondo-Carrito">
-        
+    <main>     
+        <div class="Texto-Sombra Texto-Carrito Titulo-Carrito">CARRITO DE COMPRAS</div>
         <div class="Titulos d-flex flex-row justify-center">
-            <div class="Producto-Imagen f-grow-1 align-self-center px-2">
-                <img src="/imagenes/remera_negra.jpg" alt="prod">
-            </div>   
-            <div class="Producto-Detalle f-grow-7">
-                <p>Detalle</p>
-            </div>
-            <div class="Producto-Cantidad f-grow-1">
-                <p>Cantidad</p>
-            </div>
-            <div class="Producto-Precio f-grow-5">
-                <p>Precio</p>
-            </div>
+                <div class="Producto-Imagen px-2 img-box">
+                    <div>
+                        <img src="/imagenes/remera_negra.jpg" alt="prod">
+                    </div>
+                    <div>
+                        <div class="d-flex flex-row justify-center space">
+                            <button type="button" class="Botones">Quitar</button>
+                            <button type="button" class="Botones">Cambiar</button>
+                        </div>
+                    </div>
+                </div>   
+                <div class="d-flex space w-70">
+                    <div class="Producto-Detalle f-grow-7">
+                        <p>Detalle</p>
+                    </div>
+                    <div class="Producto-Cantidad f-grow-1">
+                        <p>Cantidad</p>
+                    </div>
+                    <div class="Producto-Precio f-grow-5">
+                        <p>Precio</p>
+                    </div>
+               </div>
 
-        <div class="Resumen-Carrito f-grow-10">
-                <p>Resumen</p>
-                <br>
-                <button><div class="Botones">Promocion</div></button>
-                <br>
-                <br>
-                <p><div class="Texto-resumen"></div>Subtotal</p>
-                <p><div class="Texto-resumen"></div>Impuestos</p>
-                <br>
-                <hr noshade="noshade" size="2" width="98%" />                <br>
-                <p><div class="Texto-resumen"></div><b>Total</b></p>
-                <br>
-                <button><div class="Botones">Pagar</div></button><br>
-                <br>
+            <div class="Resumen-Carrito w-20">
+                <div>
+                    <div>Resumen</div>
+                    <button type="button" class="Botones">Promocion</button>
+                    <div class="Texto-resumen">Subtotal</div>
+                    <div class="Texto-resumen">Impuestos</div>
+                </div>
+                <div><hr noshade="noshade" size="2" width="98%"/>
+                    <div class="Texto-resumen">Total</div>
+                    <button type="button" class="Botones">Pagar</button>
+                </div>              
+                    
             </div>
 
         </div>  
 
-        <div class="d-flex flex-row justify-left">
-            <button><div class="Botones">Quitar</div></button>
-            <button><div class="Botones">Cambiar</div></button>
-        </div>
+        
     
     </div>            
 
