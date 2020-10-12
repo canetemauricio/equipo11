@@ -141,3 +141,68 @@ footer {
     font-weight: 600;
   }
   
+
+  @media (max-width: 700px){
+
+    .product-box {
+      width: 95%;
+      margin: 3% auto;
+      flex-direction: column;
+      justify-content: space-between;
+      }
+
+
+      .miniature img {
+        display: none;
+      }
+      
+      .img-box {
+        margin: 0 auto;
+        width: 90%;
+      }
+      
+      .img-box img {
+        max-width: 100%;
+        height: auto;
+      }
+      
+      .detail-box {
+       text-align: center;
+       width: 95%;
+      }
+
+      .chat-client{
+        width: 90%;
+        background-color: lightgray;
+        border-radius: 5vh;
+        margin-top: 1%;
+        margin-left: 1%;
+        padding-left: 1%;
+        font-size: 12px;
+    }
+    
+    .chatAuthor{
+        width: 90%;
+        background-color: rgb(247, 205, 101);
+        border-radius: 5vh;
+        margin-top: 1%;
+        margin-left: 8%;
+        align-items: center;
+        padding-left: 1%;
+        font-size: 12px;
+        
+    
+    }
+
+    .f-parag {
+      padding: 1.5% 0%;
+      width: 90%;
+    }
+
+     
+    
+    
+      
+
+
+  }
