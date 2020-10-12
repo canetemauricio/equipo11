@@ -7,7 +7,6 @@
 
 header {
   width: 100%;
-  
 }
 
 a {
@@ -77,12 +76,15 @@ a {
 .title {
   justify-content: center;
   font-weight: bold;
-  font-size: 50px;
+  font-size: xx-large;
   text-align: center;
 }
 
 .padding-title-1 {
-  padding: 75px 75px 0px 75px;
+  padding-top: 1.5%;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100%;
 }
 
 .column {
@@ -114,11 +116,30 @@ footer {
 }
 
 .f-title {
-  font-size: 25px;
+  font-size: x-large;
   font-weight: bold;
 }
 
 .f-parag {
   padding: 1.5% 0%;
   width: 20%;
+}
+
+@media (max-width: 575.98px) {
+  .title {
+    justify-content: center;
+    font-weight: bold;
+    font-size: x-large;
+    text-align: center;
+  }
+  .paragraph {
+    font-size: 14;
+    margin: 1.5% 10%;
+    text-align: center;
+  }
+
+  .f-parag {
+    padding: 1.5% 0%;
+    width: 20%;
+  }
 }
