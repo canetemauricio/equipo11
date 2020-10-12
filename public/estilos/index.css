@@ -43,7 +43,7 @@ a {
 
 .icons {
   padding: 0px;
-  font-size: 24px;
+  font-size: 28px;
 }
 
 .bolded {
@@ -55,8 +55,17 @@ a {
   font-size: 18px;
 }
 
+.section2 {
+}
+
 .section3 {
-  margin-left: 10%;
+  width: 50%;
+  text-align: right;
+}
+
+.section4 {
+  width: 32%;
+  text-align: right;
 }
 
 .barra-contain a {
@@ -122,10 +131,53 @@ footer {
 
 .f-parag {
   padding: 1.5% 0%;
-  width: 20%;
+  width: 30%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+#f-parag-desktop {
+  display: block;
+}
+
+#f-parag-mobile {
+  display: none;
 }
 
 @media (max-width: 575.98px) {
+  #f-parag-mobile {
+    display: block;
+  }
+  #f-parag-desktop {
+    display: none;
+  }
+  .section1 {
+    width: 40%;
+    font-size: 14px;
+  }
+
+  .icons {
+    padding: 0px;
+    font-size: 24px;
+  }
+
+  .section2 {
+    width: 20%;
+    text-align: center;
+  }
+
+  .section4 {
+    width: 40%;
+    text-align: right;
+  }
+
+  .barra-contain {
+    padding: 2vh;
+    font-size: 20px;
+  }
+
   .title {
     justify-content: center;
     font-weight: bold;
@@ -139,7 +191,7 @@ footer {
   }
 
   .f-parag {
-    padding: 1.5% 0%;
-    width: 20%;
+    padding: 4.5% 0%;
+    width: 100%;
   }
 }
