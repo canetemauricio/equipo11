@@ -9,6 +9,10 @@
   text-align: center;
 }
 
+.margin-button {
+  margin: 1% 0%;
+}
+
 .button {
   text-align: center;
   border: none;
