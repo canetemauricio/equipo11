@@ -89,3 +89,12 @@ p{
     font-weight: 600;
     font-size: 12px;
 }
+
+
+@media (max-width: 835px){
+
+.login{
+    margin-top: 15vh;
+    width: 75%;
+}
+ }
