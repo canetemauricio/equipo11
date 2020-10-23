@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/common.css" />
+    <title>MAG:Registro</title>
+    <link rel="stylesheet" href="/stylesheets/registro.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <%- include('../partials/header') %> 
+    <form action="" class="login">
+      <h1>CREÁ TU CUENTA</h1>
+      <div class="login-box">
+        <div class="login-input">
+          <i class="fas fa-user"></i>
+          <input
+            type="text"
+            name="UserName"
+            id="UserName"
+            placeholder="Nombre de Usuario"
+          />
+        </div>
+
+        <div class="login-input">
+          <i class="fas fa-lock"></i>
+          <input
+            type="email"
+            name="UserEmail"
+            id="UserEmail"
+            placeholder="Email"
+          />
+        </div>
+
+        <div class="login-input">
+          <i class="fas fa-lock"></i>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Contraseña"
+          />
+        </div>
+
+        <div class="Remember">
+          <input class="check" type="checkbox" name="" id="" />Acepto los
+          <a href="#">Términos y Condiciones</a>
+        </div>
+
+        <input type="submit" value="Confirmar" class="button" />
+
+        <hr />
+        <p><a href="/auth/login">Ya tengo una cuenta</a><br /></p>
+      </div>
+    </form>
+   
+  </body>
+  <%- include('../partials/footer') %> 
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/common.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <title>MAG: Carrito</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/carrito.css">
+</head>
+<body>
+    <%- include('../partials/header') %> 
+
+    <main>     
+        <div class="w-20 Texto-Sombra Texto-Carrito Titulo-Carrito">CARRITO DE COMPRAS</div>
+        <div class="Titulos d-flex justify-center">
+                <div class="Producto-Imagen px-2 img-box">
+                    <div>
+                        <img src="/images/remera.jpg" alt="prod">
+                    </div>
+                    <div>
+                        <div class="d-flex flex-row justify-center space margin20">
+                            <button type="button" class="Button-style">Quitar</button>
+                            <button type="button" class="Button-style">Cambiar</button>
+                        </div>
+                    </div>
+                </div>   
+                <div class="d-flex w-70">
+                    <div class="Producto-Detalle f-grow-1">
+                        <h1>Detalle</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, eligendi nisi error optio suscipit non saepe? Sed, alias sint vitae commodi temporibus dolorem earum odio, labore necessitatibus, minus maiores reprehenderit? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, natus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore commodi qui officiis porro Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor, sit amet consectetur.</p>
+                    </div>
+                    <div class="Producto-Cantidad f-grow-5 px-2">
+                        <h1>Cantidad</h1>
+                        <h1>1</h1>
+                    </div>
+                    <div class="Producto-Precio f-grow-5 px-2">
+                        <h1>Precio</h1>
+                        <h1>$99.99</h1>
+                    </div>
+               </div>
+            </div>
+ 
+            <div class="Titulos d-flex justify-center">
+                <div class="Producto-Imagen px-2 img-box">
+                    <div>
+                        <img src="/images/remera.jpg" alt="prod">
+                    </div>
+                    <div>
+                        <div class="d-flex flex-row justify-center space margin20">
+                            <button type="button" class="Button-style">Quitar</button>
+                            <button type="button" class="Button-style">Cambiar</button>
+                        </div>
+                    </div>
+                </div>   
+                <div class="d-flex w-70">
+                    <div class="Producto-Detalle f-grow-1">
+                        <h1>Detalle</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, eligendi nisi error optio suscipit non saepe? Sed, alias sint vitae commodi temporibus dolorem earum odio, labore necessitatibus, minus maiores reprehenderit? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, natus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore commodi qui officiis porro Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor, sit amet consectetur.</p>
+                    </div>
+                    <div class="Producto-Cantidad f-grow-5 px-2">
+                        <h1>Cantidad</h1>
+                        <h1>1</h1>
+                    </div>
+                    <div class="Producto-Precio f-grow-5 px-2">
+                        <h1>Precio</h1>
+                        <h1>$99.99</h1>
+                    </div>
+               </div>
+            </div>            
+       
+                <div class="Resumen-Carrito">
+                <div class="Titulos d-flex justify-center">
+
+                    <div class="w-20 Texto-Sombra">Resumen Compra
+                    </div>
+                    
+                    </div>   
+                    <div class="d-flex space w-100">
+                        <div class="Producto-Detalle f-grow-5">
+                            <p>Subtotal</p>
+                            <h2>$99.99</h2>
+                        </div>
+                        <div class="Producto-Cantidad f-grow-5">
+                            <p>Impuestos</p>
+                            <h2>$99.99</h2>
+                        </div>
+                        <div class="Producto-Precio f-grow-5">
+                            <p>Total</p>
+                            <h2>$99.99</h2>
+                        </div>
+                        
+
+
+                        <div class= d-flex>
+                            <div class="f-grow-1 justify-center">
+                                <button type="button" class="Button-style">PROMO</button>
+                            </div>                           
+                            <div class="f-grow-1 justify-center">
+                                <button type="button" class="Button-style">PAGAR</button>
+                            </div>
+                            <div class="f-grow-1 justify-center">
+                                <button type="button" class="Button-style">Dudas?</button>
+                            </div>
+                                          
+                        </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+               
+    </main>
+
+    <%- include('../partials/footer') %> 
+
+</body>
+</html>

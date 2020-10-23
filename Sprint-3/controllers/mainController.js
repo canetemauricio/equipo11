@@ -1,11 +1,11 @@
 module.exports = {
 
 home: function(req,res){
-    res.send('Hola')
+    res.render('./main/index')
 },
 
 cart: function(req,res){
-    res.send('carrito')
+    res.render('./main/cart')
 }
 
 
