@@ -30,14 +30,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 ////////////////////////////////////////RUTEAR ACÁ\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/products', productRouter)
 app.use('/auth', authRouter );  
-
-
-
 ////////////////////////////////////////************\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 
