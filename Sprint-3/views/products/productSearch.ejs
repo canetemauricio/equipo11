@@ -1,0 +1,41 @@
+<%- include('../partials/head') %> 
+
+<div class="cover"><img src="/images/VOU.jpg" alt=""></div>
+
+
+<section class="section">
+
+
+<h1>SEARCH RESULTS</h1>
+
+<hr>
+
+<%- include('../partials/search') %> 
+
+<div class="d-flex f-row f-wrap j-arround">
+
+
+
+    <% results.forEach(function(results) { %>
+
+      <article class="hero w-30">
+        <a href="/products/<%=results.id %>">
+        <div class="hero-img">
+          <img src= <%= '/images/' + results.alias +'.png' %>   alt="" width="100%">
+        </div>
+        <div class="hero-name p-2">
+          <h1><%=  results.alias.toUpperCase().replace('-', " ") %></h1>
+        </a>
+      </article>
+
+    <% })  %> 
+  </div>
+
+</section>
+
+<%- include('../partials/backButton') %> 
+  
+  <%- include('../partials/footer') %> 
+      
+    </body>
+  </html> 

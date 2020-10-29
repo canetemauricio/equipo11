@@ -1,0 +1,22 @@
+.search{
+    text-align: right;
+    margin-bottom: 1%;
+    }
+  
+    .search input[type=text]{
+      background-color: lightgray;
+      border: 1px solid gray;
+      width: 15%;  
+    }
+  
+    .search input[type=submit]{
+      background-color: lightgray;
+      border: 1px solid gray;
+      padding-left:1%;
+      padding-right:1%;  
+    }
+
+  .p-05{padding: 0.2%;}
+  .p-1{padding: 1%;}
+  .p-2{padding: 2%;}
+  

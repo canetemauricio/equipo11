@@ -1,0 +1,13 @@
+<% products.forEach(function(products) { %>
+
+      <article class="hero w-30">
+        <a href="/products/<%=products.id %>">
+        <div class="hero-img">
+          <img src= "<%=products.image%>"    alt="" width="100%">
+        </div>
+        <div class="hero-name p-2">
+          <h1><%=  products.alias.toUpperCase().replace('-', " ") %></h1>
+        </a>
+      </article>
+
+    <% })  %> 
