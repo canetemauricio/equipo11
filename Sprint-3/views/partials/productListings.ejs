@@ -1,11 +1,11 @@
 <% products.forEach(function(products) { %>
 
       <article class="w-20 box-shadow">
-        <!-- <a href="/products/<%=products.id %>"> -->
+        
           <div class="prod-pad">
             <div class="prod-border">
               <div>
-                <img src= "<%=products.image%>"    alt="" width="100%">
+                <a href="/products/<%=products.id %>"><img src= "<%=products.image%>"    alt="" width="100%"></a>
               </div>
               <div class="detail-pad">
                 <div class="d-flex f-row">
