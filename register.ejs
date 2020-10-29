@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!– <link rel='stylesheet' href='/stylesheets/register.css' />
+    <!– <link rel='stylesheet' href='/stylesheets/registro.css' />
+    <!– <link rel="stylesheet" href="/stylesheets/Producto.css">
+    <!– <link rel="stylesheet" href="/stylesheets/common.css" />
+    <!– <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!– <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    
+</head>
+
+<body>
+ <%/*- include('../partials/header') */%> 
+
+    <h1>Alta de nuevos productos</h1>
+
+    <div class=>
+
+            <form action="POST" action="/products/register" enctype="multipart/form-data">
+            <label for="">Imagen</label>
+            <input type="file" name="imagen">
+
+            <label for="">Nombre del producto</label>
+            <input type="text" name="name">
+
+            <label for="">Descripcion</label>
+            <input type="text" name="description">
+
+            <label for="">Que tipo de prenda es?</label>
+            <select name="type" id="">
+                <option value="Remera"></option>
+                <option value="Camisa"></option>
+                <option value="Pantalon"></option>
+                <option value="Campera"></option>
+                <option value="Zapatillas"></option>
+            </select>
+            
+            <label for="">En que estado esta la prenda?</label>
+            <select name="estado" id="">
+                <option value="Nunca lo use"></option>
+                <option value="Muy poco uso"></option>
+                <option value="Con pequeños desgastes"></option>
+                <option value="Bastante usado"></option>
+            </select>
+
+            <label for="">Que Talle es?</label>
+            <select name="talle" id="">    
+                <option value="Muy grande"></option>
+                <option value="Grande"></option>
+                <option value="Mediano"></option>
+                <option value="Pequeño"></option>
+            </select>
+        
+            <label for="">Color</label>
+            <input type="text" name="color">
+
+            <label for="">Marca</label>
+            <input type="text" name="marca">
+
+            <label for="">Precio</label>
+            <input type="number" name="precio">
+    
+            <label for="">Calidad?</label>
+            <select name="talle" id="">    
+                <option value="Excelente"></option>
+                <option value="Alta Calidad"></option>
+                <option value="Mediana Calidad"></option>
+                <option value="Baja Calidad"></option>
+            </select>
+        
+            <button class="button">REGISTRAR</button>
+            <BUtton Class="button">BORRAR</button>
+    
+
+
+            </form>
+
+        </div>
+
+<%/*- include('../partials/footer') */%> 
+
+
+</body>
+</html>
