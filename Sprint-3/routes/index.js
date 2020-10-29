@@ -1,11 +1,13 @@
-var express = require("express");
+var express = require('express');
+const mainController = require('../controllers/mainController');
 var router = express.Router();
-const mainController = require("../controllers/mainController");
 
-router.get("", mainController.home);
+router.get('', mainController.home)
+router.get('/creditos', mainController.about)
+router.get('/cart', mainController.cart)
 
-router.get("/cart", mainController.cart);
 
-router.get("/listing", mainController.listing);
+
+
 
 module.exports = router;
