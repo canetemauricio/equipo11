@@ -8,6 +8,10 @@
   display: flex;
 }
 
+.align-end {
+  text-align: right;
+}
+
 .f-wrap {
   flex-wrap: wrap;
 }
@@ -28,4 +32,37 @@ section {
 
 .w-20 {
   width: 20%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.mar-10 {
+  margin: 0% 15%;
+}
+
+.prod-pad {
+  margin: 5%;
+}
+
+.detail-pad {
+  padding: 3% 4%;
+}
+.prod-border {
+  border: solid lightgray 0.01em;
+}
+
+.precio-font {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.detalle-font {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.detalle-mar {
+  margin: 3% 0%;
 }

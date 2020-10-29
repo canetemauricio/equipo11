@@ -1,16 +1,27 @@
 <% products.forEach(function(products) { %>
 
-      <article class="w-20">
+      <article class="w-20 box-shadow">
         <!-- <a href="/products/<%=products.id %>"> -->
-        <div>
-          <img src= "<%=products.image%>"    alt="" width="100%">
-        </div>
-        <div class="p-2">
-          <%=  products.precio %>
-        </div>
-        <div class="p-2">
-          <%=  products.detalle %>
-        </div>
+          <div class="prod-pad">
+            <div class="prod-border">
+              <div>
+                <img src= "<%=products.image%>"    alt="" width="100%">
+              </div>
+              <div class="detail-pad">
+                <div class="d-flex f-row">
+                  <div class="p-2 precio-font w-50">
+                    $<%=  products.precio %>
+                  </div>
+                  <div class="precio-font w-50 align-end">
+                    <a href="#"><i class="far fa-heart"></i>                     
+                  </div>
+                </div>
+                <div class="p-2 detalle-font detalle-mar">
+                  <%=  products.detalle %>
+                </div>
+              </div>
+            </div>
+          </div>
         </a>
       </article>
 

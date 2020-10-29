@@ -11,6 +11,6 @@ module.exports = {
   },
 
   listing: function (req, res) {
-    res.render("./main/listing", { products: products });
+    res.render("./products/list", { products: products });
   },
 };
