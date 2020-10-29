@@ -1,15 +1,16 @@
 const bcrypt = require('bcrypt')
 const fs= require('fs')
+const { title } = require('process')
 let users = require('../data/users.json')
 
 module.exports = {
 
     login: function(req,res){
-        res.render('./auth/login') 
+        res.render('./auth/login', {title: 'LOGIN -MAG' }) 
     },
 
     register: function(req,res){
-        res.render('./auth/register') 
+        res.render('./auth/register', {title: 'CREATE ACCOUNT - MAG'}) 
     },
 
     validateLogin: function (req,res){
