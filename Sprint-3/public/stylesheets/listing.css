@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+}
+.d-flex {
+  display: flex;
+}
+
+.f-wrap {
+  flex-wrap: wrap;
+}
+.f-row {
+  flex-direction: row;
+}
+.j-arround {
+  justify-content: center;
+}
+.section {
+  margin-top: 0.5%;
+}
+
+section {
+  background-color: white;
+  margin: 0 auto;
+}
+
+.w-20 {
+  width: 20%;
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "precio": "21",
+    "detalle": "John",
+    "image": "/images/placeholder-2.png"
+  },
+  {
+    "id": 2,
+    "precio": "22",
+    "detalle": "Annie",
+    "image": "/images/placeholder-2.png"
+  },
+  {
+    "id": 3,
+    "precio": "23",
+    "detalle": "Klara",
+    "image": "/images/placeholder-2.png"
+  },
+  {
+    "id": 4,
+    "precio": "24",
+    "detalle": "Reggie",
+    "image": "/images/placeholder-2.png"
+  },
+  {
+    "id": 5,
+    "precio": "25",
+    "detalle": "Margaret",
+    "image": "/images/placeholder-2.png"
+  },
+  {
+    "id": 6,
+    "precio": "26",
+    "detalle": "Unknown",
+    "image": "/images/placeholder-2.png"
+  },
+  {
+    "id": 7,
+    "precio": "27",
+    "detalle": "Kevin",
+    "image": "/images/placeholder-2.png"
+  },
+  {
+    "id": 8,
+    "precio": "28",
+    "detalle": "Unknown",
+    "image": "/images/placeholder-2.png"
+  },
+  {
+    "id": 9,
+    "precio": "29",
+    "detalle": "Unknown",
+    "image": "/images/placeholder-2.png"
+  },
+  {
+    "id": 10,
+    "precio": "30",
+    "detalle": "Popclaw",
+    "image": "/images/placeholder-2.png"
+  }
+]
