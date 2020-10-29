@@ -14,17 +14,17 @@ module.exports = {
 
     if (productResult) {
       return res.render("./products/detail", {
-        title: productResult.alias,
+        title: productResult.detalle,
         productResult,
       });
     }
   }, //  FUNCIONA
   search: function (req, res) {
-    let userSearch = req.query.alias.toLowerCase();
+    let userSearch = req.query.detalle.toLowerCase();
     //let upperFirst = userSearch.charAt(0).toUpperCase() + userSearch.slice(1).toLowerCase()
     //let lowerSecond = userSearch.toLowerCase()
     let results = products.filter(function (product) {
-      return product.alias.toLowerCase().includes(userSearch);
+      return product.detalle.toLowerCase().includes(userSearch);
     });
 
     res.render("./products/productSearch", {
@@ -47,10 +47,8 @@ module.exports = {
     }
     productsList.push({
       id: productsList[productsList.length - 1].id + 1,
-      alias: req.body.alias,
-      name: req.body.name,
-      powers: req.body.powers,
-      review: req.body.review,
+      detalle: req.body.detalle,
+      precio: req.body.precio,
     });
 
     let productsJSON = JSON.stringify(productsList);
@@ -66,10 +64,8 @@ module.exports = {
   refresh: function (req, res) {
     let productEdited = {
       id: req.body.id,
-      alias: req.body.alias,
-      name: req.body.name,
-      powers: req.body.powers,
-      review: req.body.review,
+      detalle: req.body.detalle,
+      precio: req.body.precio,
     };
     res.send(productEdited);
   }, //   FUNCIONA
