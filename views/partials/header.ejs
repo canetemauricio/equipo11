@@ -1,14 +1,27 @@
 <header>
-  <nav class="common-barra-contain common-d-flex common-space-bet">
-    <div class="common-section1">
-      <a class="common-lin-horizontal common-bolded" href="/">Home</a>
-      <a href="/products">Catálogo</a>
-      <a href="/products/create">| Añadir producto</a>
-    </div>
-    <div class="common-bolded common-Section2">MAG</div>
-    <div class="common-icons common-Section4">
-      <a href="/auth/login"><i class="fas fa-sign-in-alt"></i></a>
-      <a href="/auth/register"><i class="fas fa-user-plus"></i></a>
-    </div>
+
+  <nav>
+  <div class="menu d-flex f-row">
+      <div class="logo"><img src="/images/image.png" alt=""></div>
+      <div class="link"><a href=""/""> HOME</a></div>
+      <div class="link"><a href="/catalogo"> CATÁLOGO</a></div>
+      <div class="link"> NUEVO PRODUCTO</div>
+  
+      <div class="search">
+          <form action="/products/search" method="GET" class="search-form">
+              <div class="search-field d-flex">
+            <input type="text" name="alias" id="search" class="search-input" placeholder="Buscar">
+            <button type="submit"><i class="fas fa-search" type= "submit"></i></button>
+          </div>
+          </form>
+        </div>
+  </div>    
   </nav>
-</header>
+  </header>
+
+
+
+
+
+
+

@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Noto Sans", sans-serif;
-  color: #3d3d3d;
 }
 
 a {
@@ -62,7 +61,6 @@ input:focus {
 }
 
 .header {
-  background-color: gray;
   height: 100px;
 }
 

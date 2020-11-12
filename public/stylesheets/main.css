@@ -4,15 +4,11 @@
   box-sizing: border-box;
 }
 
-html{
-    scroll-behavior: smooth;
-  }
   
   body {
+    color: white;
     margin:0;
     padding:0;
-    font-family: "Amazon Ember";
-    background-color:lightgray;
   }
   
   a {text-decoration: none;  color: black;}

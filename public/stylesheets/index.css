@@ -5,6 +5,11 @@
   font-family: "Noto Sans", sans-serif;
 }
 
+
+html{
+  scroll-behavior: smooth;
+}
+
 .center {
   text-align: center;
 }
@@ -19,7 +24,7 @@
   width: 30%;
   color: #eaeaea;
   font-size: 14px;
-  background-color: #3d3d3d;
+  background-color: lightblue;
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
