@@ -1,28 +1,52 @@
 <% products.forEach(function(products) { %>
 
-      <article class="w-20 box-shadow">
-        
-          <div class="prod-pad">
-            <div class="prod-border">
-              <div>
-                <a href="/products/<%=products.id %>"><img src= "<%=products.image%>"    alt="" width="100%"></a>
-              </div>
-              <div class="detail-pad">
-                <div class="d-flex f-row">
-                  <div class="p-2 precio-font w-50">
-                    $<%=  products.precio %>
-                  </div>
-                  <div class="precio-font w-50 align-end">
-                    <a href="#"><i class="far fa-heart"></i>                     
-                  </div>
-                </div>
-                <div class="p-2 detalle-font detalle-mar">
-                  <%=  products.detalle %>
-                </div>
-              </div>
-            </div>
+<article class="w-25 white pad">
+  <div class="product-box box-shadow">
+    <a href="/products/<%=products.id %>">
+      <div>
+        <div class="product-image">
+          <div class="front-image">
+            <img src="<%=products.image%>" alt="" width="100%" height="auto" />
           </div>
-        </a>
-      </article>
+          <div class="quick-view">Comprar</div>
+        </div>
+        <div class="det-pad">
+          <div class="align-center">
+            <!-- Detalle -->
+            <p
+              class="align-left"
+              style="display: inline-block; width: 60%; font-size: 24px"
+            >
+              $<%= products.precio %>
+            </p>
+            <p
+              class="align-end"
+              style="
+                display: inline-block;
+                width: 36%;
+                color: gray;
+                font-size: 14px;
+              "
+            >
+              Talle 37
+            </p>
+          </div>
+          <div class="name-mar">
+            <p
+              class="align-left"
+              style="
+                display: inline-block;
+                color: rgb(51, 51, 51);
+                font-size: 14px;
+              "
+            >
+              <%= products.detalle %>
+            </p>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+</article>
 
-    <% })  %> 
+<% }) %>
