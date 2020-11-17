@@ -144,6 +144,10 @@ a {
   background-color: lightgray;
 }
 
+.bg-light-blue{
+  background-color: #18B1C2;
+}
+
 footer {
   background-color: rgb(243, 243, 243);
   padding: 7%;
