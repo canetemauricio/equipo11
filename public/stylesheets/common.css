@@ -12,6 +12,44 @@ header {
   display: flex;
 }
 
+.create-row {
+  flex-direction: row;
+}
+
+.create-column {
+  flex-direction: column;
+}
+
+.create-border {
+  border: #230c33 5px solid;
+  border-radius: 10px;
+  margin: 5%;
+  padding: 5%;
+}
+
+.create-center {
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.center {
+  text-align: center;
+}
+
+.button {
+  text-align: center;
+  border: none;
+  width: 30%;
+  color: #eaeaea;
+  font-size: 14px;
+  background-color: #230c33;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 0 auto;
+  margin-top: 5%;
+}
+
 .common-space-bet {
   justify-content: space-between;
 }
