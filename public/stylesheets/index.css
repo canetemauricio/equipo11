@@ -5,8 +5,7 @@
   font-family: "Noto Sans", sans-serif;
 }
 
-
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -24,7 +23,7 @@ html{
   width: 30%;
   color: #eaeaea;
   font-size: 14px;
-  background-color: lightblue;
+  background-color: #230c33;
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
@@ -143,6 +142,10 @@ a {
 
 .bg-lgray {
   background-color: lightgray;
+}
+
+.bg-light-blue{
+  background-color: #18B1C2;
 }
 
 footer {

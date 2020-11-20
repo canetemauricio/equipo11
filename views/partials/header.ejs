@@ -1,27 +1,30 @@
+
+<link rel='stylesheet' href='/stylesheets/index.css' />
+
 <header>
-
   <nav>
-  <div class="menu d-flex f-row">
-      <div class="logo"><img src="/images/image.png" alt=""></div>
-      <div class="link"><a href=""/""> HOME</a></div>
-      <div class="link"><a href="/catalogo"> CATÁLOGO</a></div>
-      <div class="link"> NUEVO PRODUCTO</div>
-  
+    <div class="menu d-flex f-row bg-light-blue">
+      <div class="logo"><img src="/images/image.png" alt="" /></div>
+      <div class="link"><a href="/"> HOME</a></div>
+      <div class="link"><a href="/products"> CATÁLOGO</a></div>
+      <div class="link"><a href="/products/create">NUEVO PRODUCTO</a></div>
+
       <div class="search">
-          <form action="/products/search" method="GET" class="search-form">
-              <div class="search-field d-flex">
-            <input type="text" name="alias" id="search" class="search-input" placeholder="Buscar">
-            <button type="submit"><i class="fas fa-search" type= "submit"></i></button>
+        <form action="/products/search" method="GET" class="search-form">
+          <div class="search-field d-flex">
+            <input
+              type="text"
+              name="alias"
+              id="search"
+              class="search-input"
+              placeholder="Buscar"
+            />
+            <button type="submit">
+              <i class="fas fa-search" type="submit"></i>
+            </button>
           </div>
-          </form>
-        </div>
-  </div>    
+        </form>
+      </div>
+    </div>
   </nav>
-  </header>
-
-
-
-
-
-
-
+</header>

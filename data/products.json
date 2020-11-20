@@ -1,43 +1,43 @@
 [
   {
     "id": 2,
-    "precio": "22",
-    "detalle": "Detalle",
+    "precio": "229,99",
+    "detalle": "Texto de una linea",
     "image": "/images/placeholder-2.png"
   },
   {
     "id": 4,
-    "precio": "24",
-    "detalle": "Detalle",
+    "precio": "249,99",
+    "detalle": "Texto de dos lineas, no se como arreglar esto",
     "image": "/images/placeholder-2.png"
   },
   {
     "id": 5,
-    "precio": "25",
+    "precio": "259,99",
     "detalle": "Detalle",
     "image": "/images/placeholder-2.png"
   },
   {
     "id": 6,
-    "precio": "26",
+    "precio": "269,99",
     "detalle": "Detalle",
     "image": "/images/placeholder-2.png"
   },
   {
     "id": 7,
-    "precio": "27",
+    "precio": "279,99",
     "detalle": "Detalle",
     "image": "/images/placeholder-2.png"
   },
   {
     "id": 8,
-    "precio": "28",
+    "precio": "289,99",
     "detalle": "Detalle",
     "image": "/images/placeholder-2.png"
   },
   {
     "id": 9,
-    "precio": "29",
+    "precio": "299,99",
     "detalle": "Detalle",
     "image": "/images/placeholder-2.png"
   },
