@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Noto Sans", sans-serif;
+    text-decoration: none;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
 }
 
 header{
