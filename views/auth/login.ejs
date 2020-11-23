@@ -4,6 +4,13 @@
 <link rel='stylesheet' href='/stylesheets/common.css' />
 
   <body>
+    <% if(typeof errors != 'undefined') { %>
+      <ul>
+        <% for(var i = 0; i < errors.length; i++) { %>
+        <li> <%= errors[i].msg %> </li>
+        <% } %>
+      </ul>
+      <% } %>
     <form action="/auth/validate" class="login" method="POST">
       <h1>INICIAR SESIÓN</h1>
       <div class="login-box">
@@ -34,7 +41,8 @@
           <a href="/auth/register">No tengo cuenta</a>
         </p>
       </div>
-    </form>
+    </form>    
+    
 
     <%- include('../partials/footer') %> 
     
