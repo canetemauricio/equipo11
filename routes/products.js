@@ -1,11 +1,12 @@
 var express = require('express');
 const productController = require('../controllers/productController');
 var router = express.Router();
+var check_admin = require("../middlewares/check-admin")
 
 
 router.get('/', productController.list)
 
-router.get('/create', productController.create)
+router.get('/create', check_admin, productController.create) // con middelware para controlar que el user sea administrador
 
 router.get('/search', productController.search)
 

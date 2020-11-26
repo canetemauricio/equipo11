@@ -11,6 +11,9 @@ var usersRouter = require('./routes/users');
 var heroesRouter = require('./routes/products')
 var authRouter = require('./routes/auth')
 
+var checkIP = require("./middlewares/check-ip");
+const checkIp = require('./middlewares/check-ip');
+
 var app = express();
 
 // view engine setup
@@ -28,6 +31,9 @@ app.use('/', indexRouter);
 app.use('/products', heroesRouter)
 app.use('/users', usersRouter);
 app.use('/auth', authRouter );  
+
+// incorpore checkIP del Middleware para todo el sitio
+app.use(checkIp) 
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
