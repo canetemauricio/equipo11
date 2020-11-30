@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+    text-decoration: none;
+    
+}
+
+.social{
+    align-items: center;
+    height: 6vh;
+    background-color:black;
+    color: white;
+}
+
+
+.facebook{
+    margin-left: 2%;
+}
+.media{
+    text-align: center;
+}
+
+.auth {
+   width: 30%;
+   font-size: 12px;
+   text-align: end;
+}
+
+.cart{
+    width: 15%;
+    margin-left: 8%;
+    font-size: 12px;
+    text-align: end;
+}
+
+.cart .icon{
+    margin-left: 4%;
+}
+
+.fab{font-size: 20px;}
+.fas{ font-size: 20px;}
+.d-flex{display: flex;}
+.f-row{flex-direction: row;}
+.f-end{justify-content: flex-end;}
+.w-5{width: 3%;}
+.w-30{width: 10%;}
+.w-60{width: 60%;}
