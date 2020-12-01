@@ -6,7 +6,7 @@ const { check, validationResult, body } = require("express-validator");
 
 module.exports = {
   login: function (req, res) {
-    res.render("./auth/login", { title: "LOGIN -MAG", loggedUser: req.session.loggedUser });
+    res.render("./auth/login", { title: "LOGIN -MAG" });
   }, // FUNCIONA
   register: function (req, res) {
     res.render("./auth/register", { title: "CREATE ACCOUNT - MAG" });
@@ -34,15 +34,15 @@ module.exports = {
       }
 
       if(loggedUser == undefined){
-        res.render("./auth/login", { title: "LOGIN -MAG" , errors: [{msg: 'credenciales inválidas.'}] });
+        res.render("./auth/login", { title: 'LOGIN - MAG', errors: [{msg: 'credenciales inválidas.'}] });
       }
 
     } else{
-      res.render("./auth/login", { title: "LOGIN -MAG" , errors: errors.errors });
+      res.render("./auth/login", { errors: errors.errors });
     }
 
     req.session.loggedUser = loggedUser
-    res.redirect('/', {title: 'MAG - CADA PRENDA TIENE SU HISTORIA', loggedUser: loggedUser})
+    res.redirect('/')
 
 
   },

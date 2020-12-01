@@ -1,10 +1,12 @@
 const { check, validationResult, body } = require("express-validator");
 
-checkLogin = {
-  formHandler: function (req, res, next) {  
-  [check('password').isLength({ min: 6 }), check('email').isEmail()]
-  next()
-  }
-}
+module.exports = [ 
+  check('password').isLength({ min: 6 }).withMessage('La contraseña debe contener al menos 6 caracteres'), 
+  check('email').isEmail().withMessage('Email inválido')
 
-module.exports = checkLogin
+
+]
+ 
+  
+
+
