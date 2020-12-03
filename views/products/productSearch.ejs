@@ -1,7 +1,16 @@
-<%- include('../partials/header') %> 
-<%- include('../partials/head') %> 
 
-<div class="cover"><img src="/images/VOU.jpg" alt=""></div>
+<%- include('../partials/head') %>
+<link rel='stylesheet' href='/stylesheets/social.css' />
+<link rel='stylesheet' href='/stylesheets/header.css' />
+<link rel='stylesheet' href='/stylesheets/listing.css' />
+<link rel='stylesheet' href='/stylesheets/footer.css' />
+<link rel='stylesheet' href='/stylesheets/common.css' />
+</head>
+
+<body>
+  
+<%- include('../partials/social') %> 
+<%- include('../partials/header') %> 
 
 
 <section class="section">
@@ -11,21 +20,18 @@
 
 <hr>
 
-<%- include('../partials/search') %> 
 
 <div class="d-flex f-row f-wrap j-arround">
-
-
 
     <% results.forEach(function(results) { %>
 
       <article class="hero w-30">
         <a href="/products/<%=results.id %>">
         <div class="hero-img">
-          <img src= <%= '/images/' + results.alias +'.png' %>   alt="" width="100%">
+          <img src= <%= '/images/' + results.detalle +'.png' %>   alt="" width="100%">
         </div>
         <div class="hero-name p-2">
-          <h1><%=  results.alias.toUpperCase().replace('-', " ") %></h1>
+          <h1><%=  results.detalle.toUpperCase().replace('-', " ") %></h1>
         </a>
       </article>
 

@@ -29,25 +29,29 @@ module.exports = {
           if(bcrypt.compareSync(req.body.password,usuarios[i].password)){
             loggedUser = usuarios[i]
             break;
+            
           }
+       
         }
       }
 
       if(loggedUser == undefined){
         res.render("./auth/login", { title: 'LOGIN - MAG', errors: [{msg: 'credenciales inválidas.'}] });
+      }else{
+        req.session.loggedUser = loggedUser.userName.toUpperCase()
+        res.locals= {user: req.session.loggedUser}
+        res.redirect('/')
       }
 
     } else{
       res.render("./auth/login", { errors: errors.errors });
     }
 
-    req.session.loggedUser = loggedUser
-    res.redirect('/')
 
 
   },
 
-  newUser: function (req, res) {
+  newUser: function (req, res,next) {
 
     let errors = validationResult(req)
 
@@ -56,6 +60,7 @@ module.exports = {
       userName: req.body.UserName,
       email: req.body.UserEmail,
       password: bcrypt.hashSync(req.body.password, 10),
+      avatar: req.files[0].filename
     };
 
     let userFile = fs.readFileSync('./data/users.json',{encoding: 'utf-8'})
@@ -79,4 +84,12 @@ module.exports = {
     return res.render("./auth/register", { title: "CREATE ACCOUNT - MAG", errors: errors.errors });
   }
   }, // FUNCIONA Y REGISTRA USUARIOS
+
+
+  logout: function (req,res) {
+    req.session.destroy()
+    res.redirect('/')
+
+
+  }
 };

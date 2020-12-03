@@ -1,7 +1,7 @@
 module.exports = {
   home: function (req, res, next) {
     res.render("./main/index", {
-      title: "MAG - CADA PRENDA TIENE SU HISTORIA",
+      title: "MAG - CADA PRENDA TIENE SU HISTORIA"
     });
   }, //   FUNCIONA - incorpore checkIP de Middleware
 

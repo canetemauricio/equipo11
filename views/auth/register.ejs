@@ -12,7 +12,7 @@
     <%- include('../partials/errors') %> 
 
     
-    <form action="/auth/registred" class="login" method="POST">
+    <form action="/auth/registred" class="login" method="POST" enctype="multipart/form-data">
       <h1>CREÁ TU CUENTA</h1>
       <div class="login-box">
         <div class="login-input">
@@ -42,6 +42,16 @@
             name="password"
             id="password"
             placeholder="Contraseña"
+          />
+        </div>
+
+        <div class="login-input">
+         
+          <label for="avatar">Avatar</label>
+          <input type="file"
+            name="avatar"
+            id="avatar"
+            
           />
         </div>
 

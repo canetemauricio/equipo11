@@ -23,13 +23,17 @@
 
     <div class="auth w-60 d-flex f-row f-end">
         <div class="login-text">
-            
-                <p>LOGIN</p>
-            
+          <% if(user){ %>
+              <p><%= user %> <p><form action="/auth/logout" method="POST"> <button>LOGOUT</button></form></p>
+         <%  } else{ %>
+              <p><a href="/auth/login"> LOGIN</a></p>
+              <% } %>
+           
+
         </div>
         <div>|</div>
         <div class="register">
-            <p>REGISTER</p>
+            <p><a href="/auth/register">REGISTER</a></p>
         </div> 
     </div>
 

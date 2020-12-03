@@ -20,7 +20,7 @@ module.exports = {
     }
   }, //  FUNCIONA
   search: function (req, res) {
-    let userSearch = req.query.detalle.toLowerCase();
+    let userSearch = req.query.producto.toLowerCase();
     //let upperFirst = userSearch.charAt(0).toUpperCase() + userSearch.slice(1).toLowerCase()
     //let lowerSecond = userSearch.toLowerCase()
     let results = products.filter(function (product) {

@@ -2,12 +2,11 @@
 
 module.exports = function(req, res, next) {
 
-    if ( req.session.loggedUser == "admin") {
-        
+    if ( req.session.loggedUser== "ADMIN") {
         next();
 
     } else {
         console.log('Usuario NO autorizado')
-        res.render("./auth/login", { title: "LOGIN -MAG" , errors: [{msg: 'Necesitás iniciar sesión para acceder a esta sección.'}] });
+        return res.render("./auth/login", { title: "LOGIN -MAG" , errors: [{msg: 'Necesitás iniciar sesión para acceder a esta sección.'}] });
     }    
 }
