@@ -1,35 +1,110 @@
-
-
 <%- include('../partials/head') %> 
 
 <link rel='stylesheet' href='/stylesheets/header.css' />
-<link rel='stylesheet' href='/stylesheets/common.css' />
+<link rel='stylesheet' href='/stylesheets/productCreate.css' />
+<link rel="stylesheet" href="/stylesheets/Producto.css">
 <link rel='stylesheet' href='/stylesheets/footer.css' />
+<link rel='stylesheet' href='/stylesheets/common.css' />
 
 </head>
 <body>
-  <%- include('../partials/social') %> 
+<%- include('../partials/social') %>     
 <%- include('../partials/header') %>
-    <main> 
-      <div class="create-border create-center">
-        <form action="/products/create" method="POST">
-        <div class="common-d-flex create-row create-center">          
-            <div>
-              <label for="precio">Precio</label>
-              <input type="text" name="precio" />
+    <main>     
+
+             <div class="w-20 Texto-Sombra Texto-productCreate Titulo-productCreate"> Agregar nuevo Producto</div>
+     
+             <div class="Titulos d-flex justify-center">
+          <div class="Resumen-productCreate">
+            <div class="Titulos d-flex justify-center">
+
+          <div class="Producto-Imagen px-2 ">
+                    <div>
+                        <img src="/images/buzonew.jpg" alt="prod">
+                    </div>
+                    <div>
+                        <div class="d-flex flex-row justify-center space margin20">
+                            <button type="button" class="Button-style">Agregar</button>
+                            <button type="reset" class="Button-style">Borrar</button>
+                            <button type="button" class="Button-style">Principal</button>
+                         </div>
+                    </div>
+                </div>   
+          <div class="d-flex w-70">
+
+            <div class=" d-flex f-column">
+
+              <form action="/products/create" method="POST">
+
+              <div class="Producto-Categoria f-grow-5 px-2 ">
+               <label for=""><h4>Seleccione Categoria</h4></label>
+               <select name="categoria" id="">
+                  <option value ="remera"><h4>Remera</h4></option>
+                  <option value="pantalon_largo"><h4>Pantalon Largo</h4></option>
+                  <option value="pantalon_corto"><h4>Pantalon Corto</h4></option>
+                  <option value="camisa"><h4>Camisa</h4></option>
+                  <option value="zapatillas"><h4>Zapatillas</h4></option>
+                  <option value="zapatos"><h4>Zapatos</h4></option>
+                  <option value="campera"><h4>Campera</h4></option>
+               </select>
+              </div>     
+               
+              <div class="Producto-Descripcion f-grow-5 px-2">
+                      <label for="descripcion"><h4>Contanos del producto</h4></label>
+                      <textarea name="descripcion" id="" cols="25" rows="4"></textarea>
+              </div> 
+
+              <div class="Producto-Uso f-grow-5 px-2">
+                      <label for=""><h4>Es Nuevo o Usado?</h4></label>
+                      <input type="radio" name="uso" value="Nuevo" checked> Nuevo
+                      <input type="radio" name="uso" value="Usado" checked> Usado
+              </div>
+
+              <div class="Producto-Estado f-grow-5 px-2">
+                <label for=""><h4>Como esta tu prenda?</h4></label>
+                <select name="estado" id="">
+                   <option value="impecable"><h4>Impecable!</h4></option>
+                   <option value="buena"><h4>Con algo de uso</h4></option>
+                   <option value="regular"><h4>Tiene algunas cosas</h4></option>
+                </select>
+              </div>     
+
+              <div class="Producto-Talle f-grow-5 px-2">
+                <label for="talle"><h4>Cual es el talle?</h4></label>
+                <input type="text" name="talle">
+              </div> 
+
+              <div class="Producto-Color f-grow-5 px-2">
+                <label for="color"><h4>Que color es?</h4></label>
+                <input type="text" name="color">
+              </div> 
+
+              <div class="Producto-Marca f-grow-5 px-2">
+                <label for="marca"><h4>Es de alguna marca?</h4></label>
+                <input type="text" name="marca">
+              </div> 
+
+            </form>
+                    <!-- <div class="Producto-Cantidad f-grow-5 px-2">
+                        <h1>Cantidad</h1>
+                        <h1>1</h1>
+                    </div>
+                    <div class="Producto-Precio f-grow-5 px-2">
+                        <h1>Precio</h1>
+                        <h1>$99.99</h1>-->
+                    </div>
+               </div>
             </div>
-            <div>
-              <label for="detalle">Detalle</label>
-              <input type="text" name="detalle" />
-            </div> 
-        </div>  
-        <div class="center margin-button">
-          <input type="submit" class="button"/>
-        </div>              
-      </form>
-      </div>            
+         
+        </div>   
+                    
+      </div>
+
+    </div>
+      
     </main>
+
     <%- include('../partials/footer') %> 
+
 </body>
 </html>
-
