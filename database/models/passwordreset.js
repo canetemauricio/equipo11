@@ -27,7 +27,14 @@ module.exports = (sequelize, DataTypes) => {
         timestamps: false
     };
     
-    const User = sequelize.define(alias, cols, config);
+    const Passwordreset = sequelize.define(alias, cols, config);
     
-    return User;
+    Passwordreset.associate = function(models) {
+        Passwordreset.belongsTo(models.user, {
+            as: "passwordreset",
+            foreignKey: "passwordresetID"
+        })
+    }
+
+    return Passwordreset;
 }
