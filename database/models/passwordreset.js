@@ -19,7 +19,7 @@ module.exports = (sequelize, DataTypes) => {
         created_at: {
             type: DataTypes.STRING,
             primaryKey: false,
-            autoIncrement: false
+            timestamps: false
         },
         
     };
