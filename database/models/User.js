@@ -8,33 +8,29 @@ module.exports = (sequelize, DataTypes) => {
         },
         name: {
             type: DataTypes.STRING,
-            primaryKey: false,
-            autoIncrement: false
+            allowNull: false
         },
-        e-mail: {
+        email: {
             type: DataTypes.STRING,
-            primaryKey: false,
-            autoIncrement: false
+            allowNull: false
         },
         password: {
             type: DataTypes.STRING,
-            primaryKey: false,
-            autoIncrement: false
+            allowNull: false
         },
         remember_token: {
             type: DataTypes.STRING,
-            primaryKey: false,
-            autoIncrement: false
+            allowNull: false
         },
         created_at: {
             type: DataTypes.DATE,
-            primaryKey: false,
-            autoIncrement: false
+            timestamps: true,
+            allowNull: false
         },
         update_at: {
             type: DataTypes.DATE,
-            primaryKey: false,
-            autoIncrement: false
+            timestamps: false,
+            allowNull: false
         }
     };
 

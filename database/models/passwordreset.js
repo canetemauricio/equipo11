@@ -8,18 +8,16 @@ module.exports = (sequelize, DataTypes) => {
         },
         email: {
             type: DataTypes.STRING,
-            primaryKey: false,
-            autoIncrement: false
+            allowNull: false
         },
         token: {
             type: DataTypes.STRING,
-            primaryKey: false,
-            autoIncrement: false
+            allowNull: false
         },
         created_at: {
             type: DataTypes.STRING,
-            primaryKey: false,
-            timestamps: false
+            timestamps: false,
+            allowNull: false
         },
         
     };
