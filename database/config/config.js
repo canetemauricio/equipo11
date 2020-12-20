@@ -2,7 +2,7 @@ module.exports = {
   "development": {
     "username": "admin",
     "password": "admin",
-    "database": "mag_db_development",
+    "database": "MagDB",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
