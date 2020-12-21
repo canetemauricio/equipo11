@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-  let alias = "cards";
+  let alias = "Card";
   let cols = {
     id: {
       type: dataTypes.INTEGER,
@@ -8,37 +8,46 @@ module.exports = (sequelize, DataTypes) => {
     },
     type: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: false,
     },
     issuer: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: false,
     },
     name: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: false,
     },
     number: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: false,
     },
     securitycode: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: false,
     },
     expirationdate: {
       type: DataTypes.DATE,
       allowNull: false,
     },
-    
+    customerID: {
+      type: dataTypes.INTEGER,
+    },
   };
 
   let config = {
-    tableName: "cards",
+    tableName: "Card",
     timestamps: false,
   };
 
-  const cards = sequelize.define(alias, cols, config);
+  const Card = sequelize.define(alias, cols, config);
 
-  return cards;
+  Card.associate = function (models) {
+    Card.belongsTo(models.Customer, {
+      as: "customer",
+      foreignKey: "customerID",
+    });
+  };
+
+  return Card;
 };

@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-  let alias = "cart";
+  let alias = "Cart";
   let cols = {
     id: {
       type: dataTypes.INTEGER,
@@ -35,11 +35,11 @@ module.exports = (sequelize, DataTypes) => {
   };
 
   let config = {
-    tableName: "cart",
+    tableName: "Cart",
     timestamps: false,
   };
 
-  const cart = sequelize.define(alias, cols, config);
+  const Cart = sequelize.define(alias, cols, config);
 
-  return cart;
+  return Cart;
 };

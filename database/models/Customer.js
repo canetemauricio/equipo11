@@ -1,5 +1,5 @@
 amodule.exports = (sequelize, DataTypes) => {
-  let alias = "seller";
+  let alias = "customer";
   let cols = {
     id: {
       type: dataTypes.INTEGER,
@@ -33,18 +33,35 @@ amodule.exports = (sequelize, DataTypes) => {
   };
 
   let config = {
-    tableName: "seller",
+    tableName: "customer",
     timestamps: false,
   };
 
-  const seller = sequelize.define(alias, cols, config);
+  const customer = sequelize.define(alias, cols, config);
 
-  seller.associate = function (models) {
-    seller.belongsToMany(model.address, {
-      as: "addresses",
-      foreignKey: "sellerID",
+  customer.associate = function (models) {
+    customer.hasMany(model.Card, {
+      as: "cards",
+      foreignkey: "customerID",
     });
   };
 
-  return seller;
+  customer.associate = function (models) {
+    customer.belongsToMany(model.products, {
+      as: "cart",
+      through: "Cart",
+      foreignKey: "customerID",
+      otherKey: "productsID",
+      timestamps: true,
+    });
+  };
+
+  customer.associate = function (models) {
+    customer.belongsToMany(model.address, {
+      as: "addresses",
+      foreignKey: "customerID",
+    });
+  };
+
+  return customer;
 };

@@ -8,25 +8,24 @@ module.exports = (sequelize, DataTypes) => {
     },
     street: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: false,
     },
     city: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: false,
     },
     state: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: false,
     },
     country: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: false,
     },
     zipcode: {
       type: DataTypes.INTEGER.UNSIGNED,
-      allowNull: false
+      allowNull: false,
     },
-    
   };
 
   let config = {
@@ -35,6 +34,20 @@ module.exports = (sequelize, DataTypes) => {
   };
 
   const address = sequelize.define(alias, cols, config);
+
+  Address.associate = function (models) {
+    Address.belongsTo(models.Customer, {
+      as: "customer",
+      foreignKey: "customerID",
+    });
+  };
+
+  Address.associate = function (models) {
+    Address.belongsTo(models.seller, {
+      as: "seller",
+      foreignKey: "sellerID",
+    });
+  };
 
   return address;
 };
