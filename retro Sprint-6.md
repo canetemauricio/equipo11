@@ -5,10 +5,35 @@ Participantes: Mauricio Cañete, Alexis Gonzalez, Guillermo Dominguez
 
 Entregables del Sprint-6:
 
-Script
+1) Restrospectiva Sprint:
+https://github.com/canetemauricio/equipo11/blob/sprint-6/retro%20Sprint-6.md
 
+2) Tablero de trabajo actualizado: 
+https://trello.com/b/0k2NUPRj/equipo11-pi-dh
 
+3) Diagrama Base de datos: 
+https://app.diagrams.net/#Hcanetemauricio%2Fequipo11%2Fsprint-6%2FMAG_Diagrama_DB.drawio
 
+4) Script de estructura en SQL: 
+https://github.com/canetemauricio/equipo11/blob/sprint-6/database/scripts/Structure_SQL.sql
+
+5) Script de datos para poblar tablas:
+https://github.com/canetemauricio/equipo11/blob/sprint-6/database/scripts/address.sql
+https://github.com/canetemauricio/equipo11/blob/sprint-6/database/scripts/cards.sql
+https://github.com/canetemauricio/equipo11/blob/sprint-6/database/scripts/cart.sql
+https://github.com/canetemauricio/equipo11/blob/sprint-6/database/scripts/categories.sql
+https://github.com/canetemauricio/equipo11/blob/sprint-6/database/scripts/customer.sql
+https://github.com/canetemauricio/equipo11/blob/sprint-6/database/scripts/passwordreset.sql
+https://github.com/canetemauricio/equipo11/blob/sprint-6/database/scripts/products.sql
+https://github.com/canetemauricio/equipo11/blob/sprint-6/database/scripts/seller.sql
+https://github.com/canetemauricio/equipo11/blob/sprint-6/database/scripts/user.sql
+
+6) Carpeta database configuracion Sequelize y archivos de modelo:
+https://github.com/canetemauricio/equipo11/tree/sprint-6/database/config
+https://github.com/canetemauricio/equipo11/tree/sprint-6/database/models
+
+7) Bread
+Pendiente de entrega
 
 
 Evaluacion del Sprint:
