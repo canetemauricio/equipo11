@@ -12,7 +12,7 @@ https://github.com/canetemauricio/equipo11/blob/sprint-6/retro%20Sprint-6.md
 https://trello.com/b/0k2NUPRj/equipo11-pi-dh
 
 3) Diagrama Base de datos: 
-https://app.diagrams.net/#Hcanetemauricio%2Fequipo11%2Fsprint-6%2FMAG_Diagrama_DB.drawio
+https://app.diagrams.net/#Hcanetemauricio%2Fequipo11%2Fsprint-6%2FUntitled%20Diagram.drawio
 
 4) Script de estructura en SQL: 
 https://github.com/canetemauricio/equipo11/blob/sprint-6/database/scripts/Structure_SQL.sql

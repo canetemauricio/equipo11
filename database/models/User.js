@@ -44,7 +44,7 @@ module.exports = (sequelize, DataTypes) => {
     User.associate = function(models) {
         User.belongsTo(models.passwordreset, {
             as: "user_passwordreset",
-            foreignKey: "id"
+            foreignKey: "passwordresetID"
         })
     }
 

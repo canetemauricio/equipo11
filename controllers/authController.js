@@ -40,7 +40,7 @@ module.exports = {
       }else{
         req.session.loggedUser = loggedUser.userName.toUpperCase()
         res.locals= {user: req.session.loggedUser}
-        res.redirect('/products/create')
+        res.redirect("back")
       }
 
     } else{
