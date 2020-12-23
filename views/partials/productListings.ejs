@@ -1,4 +1,4 @@
-<% products.forEach(function(products) { %>
+<% for (let i = 0; i < products.length; i++) { %>
 
 <article class="w-25 white pad">
   <div class="product-box box-shadow">
@@ -6,7 +6,12 @@
       <div>
         <div class="product-image">
           <div class="front-image">
-            <img src="<%=products.image%>" alt="" width="100%" height="auto" />
+            <img
+              src="<%=products[i].image%>"
+              alt=""
+              width="100%"
+              height="auto"
+            />
           </div>
           <div class="quick-view">Comprar</div>
         </div>
@@ -28,7 +33,7 @@
                 font-size: 14px;
               "
             >
-              Talle 37
+              <%=products[i].size%>
             </p>
           </div>
           <div class="name-mar">
@@ -40,7 +45,7 @@
                 font-size: 14px;
               "
             >
-              <%= products.detalle %>
+              <%= products.detalle %> <%=products[i].name%>
             </p>
           </div>
         </div>
@@ -48,5 +53,4 @@
     </a>
   </div>
 </article>
-
-<% }) %>
+<% } %>

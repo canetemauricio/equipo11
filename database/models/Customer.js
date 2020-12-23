@@ -1,4 +1,4 @@
-amodule.exports = (sequelize, DataTypes) => {
+module.exports = (sequelize, dataTypes) => {
   let alias = "customer";
   let cols = {
     id: {
@@ -7,27 +7,27 @@ amodule.exports = (sequelize, DataTypes) => {
       autoIncrement: true,
     },
     firstname: {
-      type: DataTypes.STRING,
+      type: dataTypes.STRING,
       allowNull: false,
     },
     lastname: {
-      type: DataTypes.STRING,
+      type: dataTypes.STRING,
       allowNull: false,
     },
     gender: {
-      type: DataTypes.STRING,
+      type: dataTypes.STRING,
       allowNull: false,
     },
     DNI: {
-      type: DataTypes.INTEGER,
+      type: dataTypes.INTEGER,
       allowNull: false,
     },
     birthday: {
-      type: DataTypes.STRING,
+      type: dataTypes.STRING,
       allowNull: false,
     },
     phone: {
-      type: DataTypes.STRING,
+      type: dataTypes.STRING,
       allowNull: true,
     },
   };
@@ -39,29 +39,29 @@ amodule.exports = (sequelize, DataTypes) => {
 
   const customer = sequelize.define(alias, cols, config);
 
-  customer.associate = function (models) {
-    customer.hasMany(model.Card, {
-      as: "cards",
-      foreignkey: "customerID",
-    });
-  };
+  // customer.associate = function (models) {
+  //   customer.hasMany(model.Card, {
+  //     as: "cards",
+  //     foreignkey: "customerID",
+  //   });
+  // };
 
-  customer.associate = function (models) {
-    customer.belongsToMany(model.products, {
-      as: "cart",
-      through: "Cart",
-      foreignKey: "customerID",
-      otherKey: "productsID",
-      timestamps: true,
-    });
-  };
+  // customer.associate = function (models) {
+  //   customer.belongsToMany(model.products, {
+  //     as: "cart",
+  //     through: "Cart",
+  //     foreignKey: "customerID",
+  //     otherKey: "productsID",
+  //     timestamps: true,
+  //   });
+  // };
 
-  customer.associate = function (models) {
-    customer.belongsToMany(model.address, {
-      as: "addresses",
-      foreignKey: "customerID",
-    });
-  };
+  // customer.associate = function (models) {
+  //   customer.belongsToMany(model.address, {
+  //     as: "addresses",
+  //     foreignKey: "customerID",
+  //   });
+  // };
 
   return customer;
 };

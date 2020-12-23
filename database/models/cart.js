@@ -1,4 +1,4 @@
-module.exports = (sequelize, DataTypes) => {
+module.exports = (sequelize, dataTypes) => {
   let alias = "Cart";
   let cols = {
     id: {
@@ -7,29 +7,29 @@ module.exports = (sequelize, DataTypes) => {
       autoIncrement: true,
     },
     customerID: {
-      type: DataTypes.INTEGER.UNSIGNED,
+      type: dataTypes.INTEGER.UNSIGNED,
     },
     productsID: {
-      type: DataTypes.INTEGER.UNSIGNED,
+      type: dataTypes.INTEGER.UNSIGNED,
     },
     date: {
-      type: DataTypes.DATE,
+      type: dataTypes.DATE,
       allowNull: false,
     },
     quantity: {
-      type: DataTypes.INTEGER.UNSIGNED,
+      type: dataTypes.INTEGER.UNSIGNED,
       allowNull: false,
     },
     subtotal: {
-      type: DataTypes.INTEGER.UNSIGNED,
+      type: dataTypes.INTEGER.UNSIGNED,
       allowNull: false,
     },
     taxes: {
-      type: DataTypes.INTEGER.UNSIGNED,
+      type: dataTypes.INTEGER.UNSIGNED,
       allowNull: true,
     },
     total: {
-      type: DataTypes.INTEGER.UNSIGNED,
+      type: dataTypes.INTEGER.UNSIGNED,
       allowNull: false,
     },
   };

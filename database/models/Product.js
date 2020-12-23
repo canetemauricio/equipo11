@@ -1,4 +1,4 @@
-module.exports = (sequelize, DataTypes) => {
+module.exports = (sequelize, dataTypes) => {
   let alias = "products";
   let cols = {
     id: {
@@ -7,39 +7,39 @@ module.exports = (sequelize, DataTypes) => {
       autoIncrement: true,
     },
     name: {
-      type: DataTypes.STRING,
+      type: dataTypes.STRING,
       allowNull: false,
     },
     image: {
-      type: DataTypes.STRING,
+      type: dataTypes.STRING,
       allowNull: false,
     },
     description: {
-      type: DataTypes.STRING,
+      type: dataTypes.STRING,
       allowNull: false,
     },
     gender: {
-      type: DataTypes.STRING,
+      type: dataTypes.STRING,
       allowNull: false,
     },
     quality: {
-      type: DataTypes.STRING,
+      type: dataTypes.STRING,
       allowNull: false,
     },
     size: {
-      type: DataTypes.STRING,
+      type: dataTypes.STRING,
       allowNull: false,
     },
-    colour: {
-      type: DataTypes.STRING,
+    color: {
+      type: dataTypes.STRING,
       allowNull: false,
     },
     brand: {
-      type: DataTypes.STRING,
+      type: dataTypes.STRING,
       allowNull: false,
     },
     usestate: {
-      type: DataTypes.STRING,
+      type: dataTypes.STRING,
       allowNull: false,
     },
   };
@@ -51,25 +51,25 @@ module.exports = (sequelize, DataTypes) => {
 
   const products = sequelize.define(alias, cols, config);
 
-  products.associate = function (models) {
-    products.belongsToMany(model.categories, {
-      as: "categories",
-      through: "products_categories",
-      foreignKey: "productsID",
-      otherKey: "categoriesID",
-      timestamps: false,
-    });
-  };
+  // products.associate = function (models) {
+  //   products.belongsToMany(model.categories, {
+  //     as: "categories",
+  //     through: "products_categories",
+  //     foreignKey: "productsID",
+  //     otherKey: "categoriesID",
+  //     timestamps: false,
+  //   });
+  // };
 
-  products.associate = function (models) {
-    products.belongsToMany(model.customer, {
-      as: "cart",
-      through: "Cart",
-      foreignKey: "customerID",
-      otherKey: "productsID",
-      timestamps: true,
-    });
-  };
+  // products.associate = function (models) { 1 associate only, remove
+  //   products.belongsToMany(model.customer, {
+  //     as: "cart",
+  //     through: "Cart",
+  //     foreignKey: "customerID",
+  //     otherKey: "productsID",
+  //     timestamps: true,
+  //   });
+  // };
 
   return products;
 };

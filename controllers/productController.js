@@ -2,11 +2,17 @@ const fs = require("fs");
 const { RequestHeaderFieldsTooLarge } = require("http-errors");
 const { title } = require("process");
 let products = require("../data/products.json");
+let db = require("../database/models");
 
 module.exports = {
+  // list: function (req, res) {
+  //   res.render("./products/list", { title: "PRODUCTS - MAG", products });
+  // }, //   FUNCIONA
   list: function (req, res) {
-    res.render("./products/list", { title: "PRODUCTS - MAG", products });
-  }, //   FUNCIONA
+    db.products.findAll().then(function (products) {
+      res.render("./products/list", { title: "PRODUCTS - MAG", products });
+    });
+  },
   show: function (req, res) {
     let productResult = products.find(function (products) {
       return products.id == req.params.id;

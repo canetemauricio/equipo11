@@ -1,4 +1,4 @@
-module.exports = (sequelize, DataTypes) => {
+module.exports = (sequelize, dataTypes) => {
   let alias = "Card";
   let cols = {
     id: {
@@ -7,27 +7,27 @@ module.exports = (sequelize, DataTypes) => {
       autoIncrement: true,
     },
     type: {
-      type: DataTypes.STRING,
+      type: dataTypes.STRING,
       allowNull: false,
     },
     issuer: {
-      type: DataTypes.STRING,
+      type: dataTypes.STRING,
       allowNull: false,
     },
     name: {
-      type: DataTypes.STRING,
+      type: dataTypes.STRING,
       allowNull: false,
     },
     number: {
-      type: DataTypes.STRING,
+      type: dataTypes.STRING,
       allowNull: false,
     },
     securitycode: {
-      type: DataTypes.STRING,
+      type: dataTypes.STRING,
       allowNull: false,
     },
     expirationdate: {
-      type: DataTypes.DATE,
+      type: dataTypes.DATE,
       allowNull: false,
     },
     customerID: {
@@ -42,12 +42,12 @@ module.exports = (sequelize, DataTypes) => {
 
   const Card = sequelize.define(alias, cols, config);
 
-  Card.associate = function (models) {
-    Card.belongsTo(models.Customer, {
-      as: "customer",
-      foreignKey: "customerID",
-    });
-  };
+  // Card.associate = function (models) {
+  //   Card.belongsTo(models.Customer, {
+  //     as: "customer",
+  //     foreignKey: "customerID",
+  //   });
+  // };
 
   return Card;
 };
