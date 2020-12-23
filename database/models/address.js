@@ -1,4 +1,4 @@
-module.exports = (sequelize, DataTypes) => {
+module.exports = (sequelize, dataTypes) => {
   let alias = "address";
   let cols = {
     id: {
@@ -7,23 +7,23 @@ module.exports = (sequelize, DataTypes) => {
       autoIncrement: true,
     },
     street: {
-      type: DataTypes.STRING,
+      type: dataTypes.STRING,
       allowNull: false,
     },
     city: {
-      type: DataTypes.STRING,
+      type: dataTypes.STRING,
       allowNull: false,
     },
     state: {
-      type: DataTypes.STRING,
+      type: dataTypes.STRING,
       allowNull: false,
     },
     country: {
-      type: DataTypes.STRING,
+      type: dataTypes.STRING,
       allowNull: false,
     },
     zipcode: {
-      type: DataTypes.INTEGER.UNSIGNED,
+      type: dataTypes.INTEGER.UNSIGNED,
       allowNull: false,
     },
   };
@@ -33,21 +33,21 @@ module.exports = (sequelize, DataTypes) => {
     timestamps: false,
   };
 
-  const address = sequelize.define(alias, cols, config);
+  let Address = sequelize.define(alias, cols, config);
 
-  Address.associate = function (models) {
-    Address.belongsTo(models.Customer, {
-      as: "customer",
-      foreignKey: "customerID",
-    });
-  };
+  // Address.associate = function (models) {
+  //   Address.belongsTo(models.Customer, {
+  //     as: "customer",
+  //     foreignKey: "customerID",
+  //   });
+  // };
 
-  Address.associate = function (models) {
-    Address.belongsTo(models.seller, {
-      as: "seller",
-      foreignKey: "sellerID",
-    });
-  };
+  // Address.associate = function (models) {
+  //   Address.belongsTo(models.seller, {
+  //     as: "seller",
+  //     foreignKey: "sellerID",
+  //   });
+  // };
 
-  return address;
+  return Address;
 };

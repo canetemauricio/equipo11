@@ -1,4 +1,4 @@
-module.exports = (sequelize, DataTypes) => {
+module.exports = (sequelize, dataTypes) => {
   let alias = "categories";
   let cols = {
     id: {
@@ -7,31 +7,31 @@ module.exports = (sequelize, DataTypes) => {
       autoIncrement: true,
     },
     type: {
-      type: DataTypes.STRING,
+      type: dataTypes.STRING,
       allowNull: false,
     },
     subtype: {
-      type: DataTypes.STRING,
+      type: dataTypes.STRING,
       allowNull: false,
     },
     gender: {
-      type: DataTypes.STRING,
+      type: dataTypes.STRING,
       allowNull: false,
     },
     size: {
-      type: DataTypes.STRING,
+      type: dataTypes.STRING,
       allowNull: false,
     },
     color: {
-      type: DataTypes.STRING,
+      type: dataTypes.STRING,
       allowNull: false,
     },
     brand: {
-      type: DataTypes.STRING,
+      type: dataTypes.STRING,
       allowNull: false,
     },
     usestate: {
-      type: DataTypes.STRING,
+      type: dataTypes.STRING,
       allowNull: false,
     },
   };
@@ -43,15 +43,15 @@ module.exports = (sequelize, DataTypes) => {
 
   const categories = sequelize.define(alias, cols, config);
 
-  categories.associate = function (models) {
-    categories.belongsToMany(model.categories, {
-      as: "categories",
-      through: "products_categories",
-      foreignKey: "categoriesID",
-      otherKey: "productsID",
-      timestamps: false,
-    });
-  };
+  // categories.associate = function (models) {
+  //   categories.belongsToMany(model.categories, {
+  //     as: "categories",
+  //     through: "products_categories",
+  //     foreignKey: "categoriesID",
+  //     otherKey: "productsID",
+  //     timestamps: false,
+  //   });
+  // };
 
   return categories;
 };

@@ -1,4 +1,4 @@
-amodule.exports = (sequelize, DataTypes) => {
+module.exports = (sequelize, dataTypes) => {
   let alias = "seller";
   let cols = {
     id: {
@@ -7,27 +7,27 @@ amodule.exports = (sequelize, DataTypes) => {
       autoIncrement: true,
     },
     firstname: {
-      type: DataTypes.STRING,
+      type: dataTypes.STRING,
       allowNull: false,
     },
     lastname: {
-      type: DataTypes.STRING,
+      type: dataTypes.STRING,
       allowNull: false,
     },
     gender: {
-      type: DataTypes.STRING,
+      type: dataTypes.STRING,
       allowNull: false,
     },
     DNI: {
-      type: DataTypes.INTEGER,
+      type: dataTypes.INTEGER,
       allowNull: false,
     },
     birthday: {
-      type: DataTypes.STRING,
+      type: dataTypes.STRING,
       allowNull: false,
     },
     phone: {
-      type: DataTypes.STRING,
+      type: dataTypes.STRING,
       allowNull: true,
     },
   };
@@ -39,12 +39,12 @@ amodule.exports = (sequelize, DataTypes) => {
 
   const seller = sequelize.define(alias, cols, config);
 
-  seller.associate = function (models) {
-    seller.belongsToMany(model.address, {
-      as: "addresses",
-      foreignKey: "sellerID",
-    });
-  };
+  // seller.associate = function (models) {
+  //   seller.belongsToMany(model.address, {
+  //     as: "addresses",
+  //     foreignKey: "sellerID",
+  //   });
+  // };
 
   return seller;
 };
