@@ -44,7 +44,7 @@ profile.associate = function (models) {
     as: "card",
     foreignkey: "profileID",
    });
-  profile.belongsTo(models.product, {
+  profile.hasOne(models.cart, {
         as: "cart",
         foreignKey: "profileID",
   });

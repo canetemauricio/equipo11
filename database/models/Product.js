@@ -52,10 +52,11 @@ module.exports = (sequelize, dataTypes) => {
   const product = sequelize.define(alias, cols, config);
 
   product.associate = function(models) {
-    product.belongsToMany(models.product, {
-      as: "product_cart",
+    product.belongsToMany(models.cart, {
+      as: "cart",
       through: "product_cart",
-      foreignKey: "cartID"
+      foreignKey: "productID",
+      otherKey: "cartID"
     })
   }
 
