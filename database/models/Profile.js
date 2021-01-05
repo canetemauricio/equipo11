@@ -33,35 +33,26 @@ module.exports = (sequelize, dataTypes) => {
   };
 
   let config = {
-    tableName: "customer",
+    tableName: "profile",
     timestamps: false,
   };
 
-  const customer = sequelize.define(alias, cols, config);
+  const profile = sequelize.define(alias, cols, config);
 
-customer.associate = function (models) {
-customer.hasMany(model.card, {
-  as: "card",
-  foreignkey: "customerID",
+profile.associate = function (models) {
+  profile.hasMany(models.card, {
+    as: "card",
+    foreignkey: "profileID",
+   });
+  profile.belongsTo(models.product, {
+        as: "cart",
+        foreignKey: "profileID",
   });
-  };
-
-  profile.associate = function (models) {
-     profile.belongsToMany(model.product, {
-       as: "cart",
-       through: "cart",
-       foreignKey: "profileID",
-       otherKey: "productID",
-       timestamps: true,
-     });
-   };
-
-  profile.associate = function (models) {
-     profile.belongsToMany(model.address, {
+  profile.hasMany(models.address, {
        as: "address",
-       foreignKey: "profileID",
-     });
-   };
+       foreignKey: "profileID",  
+  });
+ };
 
-  return customer;
+  return profile;
 };

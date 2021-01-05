@@ -1,5 +1,5 @@
 module.exports = (sequelize, dataTypes) => {
-  let alias = "products";
+  let alias = "product";
   let cols = {
     id: {
       type: dataTypes.INTEGER,
@@ -45,31 +45,19 @@ module.exports = (sequelize, dataTypes) => {
   };
 
   let config = {
-    tableName: "products",
+    tableName: "product",
     timestamps: false,
   };
 
-  const products = sequelize.define(alias, cols, config);
+  const product = sequelize.define(alias, cols, config);
 
-  // products.associate = function (models) {
-  //   products.belongsToMany(model.categories, {
-  //     as: "categories",
-  //     through: "products_categories",
-  //     foreignKey: "productsID",
-  //     otherKey: "categoriesID",
-  //     timestamps: false,
-  //   });
-  // };
+  product.associate = function(models) {
+    product.belongsToMany(models.product, {
+      as: "product_cart",
+      through: "product_cart",
+      foreignKey: "cartID"
+    })
+  }
 
-  // products.associate = function (models) { 1 associate only, remove
-  //   products.belongsToMany(model.customer, {
-  //     as: "cart",
-  //     through: "Cart",
-  //     foreignKey: "customerID",
-  //     otherKey: "productsID",
-  //     timestamps: true,
-  //   });
-  // };
-
-  return products;
+  return product;
 };

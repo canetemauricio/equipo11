@@ -1,5 +1,5 @@
 module.exports = (sequelize, dataTypes) => {
-  let alias = "categories";
+  let alias = "variants";
   let cols = {
     id: {
       type: dataTypes.INTEGER,
@@ -34,10 +34,22 @@ module.exports = (sequelize, dataTypes) => {
       type: dataTypes.STRING,
       allowNull: false,
     },
+    quality: {
+      type: dataTypes.STRING,
+      allowNull: false,
+    },
+    costtype: {
+      type: dataTypes.STRING,
+      allowNull: false,
+    },
+    cost: {
+      type: dataTypes.INTEGER,
+      allowNull: false,
+    },
   };
 
   let config = {
-    tableName: "categories",
+    tableName: "variants",
     timestamps: false,
   };
 

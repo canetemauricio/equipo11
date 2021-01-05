@@ -33,14 +33,14 @@ module.exports = (sequelize, dataTypes) => {
     timestamps: false,
   };
 
-  let Address = sequelize.define(alias, cols, config);
+  let address = sequelize.define(alias, cols, config);
 
-  Address.associate = function (models) {
-     Address.belongsTo(models.profile, {
+  address.associate = function (models) {
+     address.belongsTo(models.profile, {
        as: "profile",
        foreignKey: "profileID",
      });
    };
 
-  return Address;
+  return address;
 };

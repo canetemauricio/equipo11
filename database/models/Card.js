@@ -1,5 +1,5 @@
 module.exports = (sequelize, dataTypes) => {
-  let alias = "Card";
+  let alias = "card";
   let cols = {
     id: {
       type: dataTypes.INTEGER,
@@ -30,24 +30,24 @@ module.exports = (sequelize, dataTypes) => {
       type: dataTypes.DATE,
       allowNull: false,
     },
-    customerID: {
+    profileID: {
       type: dataTypes.INTEGER,
     },
   };
 
   let config = {
-    tableName: "Card",
+    tableName: "card",
     timestamps: false,
   };
 
-  const Card = sequelize.define(alias, cols, config);
+  const card = sequelize.define(alias, cols, config);
 
-  Card.associate = function (models) {
-     Card.belongsTo(models.profile, {
+  card.associate = function (models) {
+     card.belongsTo(models.profile, {
       as: "profile",
       foreignKey: "profileID",
      });
    };
 
-  return Card;
+  return card;
 };
