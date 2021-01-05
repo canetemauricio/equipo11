@@ -42,12 +42,12 @@ module.exports = (sequelize, dataTypes) => {
 
   const Card = sequelize.define(alias, cols, config);
 
-  // Card.associate = function (models) {
-  //   Card.belongsTo(models.Customer, {
-  //     as: "customer",
-  //     foreignKey: "customerID",
-  //   });
-  // };
+  Card.associate = function (models) {
+     Card.belongsTo(models.profile, {
+      as: "profile",
+      foreignKey: "profileID",
+     });
+   };
 
   return Card;
 };

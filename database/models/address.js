@@ -35,19 +35,12 @@ module.exports = (sequelize, dataTypes) => {
 
   let Address = sequelize.define(alias, cols, config);
 
-  // Address.associate = function (models) {
-  //   Address.belongsTo(models.Customer, {
-  //     as: "customer",
-  //     foreignKey: "customerID",
-  //   });
-  // };
-
-  // Address.associate = function (models) {
-  //   Address.belongsTo(models.seller, {
-  //     as: "seller",
-  //     foreignKey: "sellerID",
-  //   });
-  // };
+  Address.associate = function (models) {
+     Address.belongsTo(models.profile, {
+       as: "profile",
+       foreignKey: "profileID",
+     });
+   };
 
   return Address;
 };
