@@ -29,19 +29,18 @@ module.exports = (sequelize, dataTypes) => {
   
     const product_cart = sequelize.define(alias, cols, config);
   
-    product_cart.associate = function(models) {
-      product_cart.belongsTo(models.cart, {
-        as: "profile",
-        foreignKey: "profileID"
-      }),
-      product_cart.belongsToMany(models.product, {
-        as: "product",
-        through: "product_product_cart",
-        foreignKey: "product_cartID",
-        otherKey: "productID",
-        timestamps: "false"
-      })
-    }
+    // product_cart.associate = function(models) {
+    //   product_cart.hasMany(models.cart, {
+    //     as: "cart",
+    //     foreignKey: "cartID",
+    //     timestamps: "false"
+    //   }),
+    //   product_cart.hasMany(models.product, {
+    //     as: "product",
+    //     foreignKey: "productID",
+    //     timestamps: "false"
+    //   })
+    // }
   
     return product_cart;
   };
