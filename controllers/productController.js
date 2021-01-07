@@ -9,8 +9,9 @@ module.exports = {
   //   res.render("./products/list", { title: "PRODUCTS - MAG", products });
   // }, //   FUNCIONA
   list: function (req, res) {
-    db.products.findAll().then(function (products) {
-      res.render("./products/list", { title: "PRODUCTS - MAG", products });
+    db.product.findAll()
+      .then(function (product) {
+        res.render("./products/list", { title: "PRODUCTS - MAG", product:product });
     });
   },
   show: function (req, res) {
