@@ -35,17 +35,9 @@ module.exports = (sequelize, dataTypes) => {
       allowNull: false,
     },
     quality: {
-      type: dataTypes.STRING,
+      type: dataTypes.INTEGER.UNSIGNED,
       allowNull: false,
-    },
-    costtype: {
-      type: dataTypes.STRING,
-      allowNull: false,
-    },
-    cost: {
-      type: dataTypes.INTEGER,
-      allowNull: false,
-    },
+    }
   };
 
   let config = {
