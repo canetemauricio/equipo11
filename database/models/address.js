@@ -23,8 +23,11 @@ module.exports = (sequelize, dataTypes) => {
       allowNull: false,
     },
     zipcode: {
-      type: dataTypes.INTEGER.UNSIGNED,
+      type: dataTypes.STRING,
       allowNull: false,
+    },    
+    profileID: {
+      type: dataTypes.INTEGER,
     },
   };
 
