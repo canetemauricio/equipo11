@@ -6,6 +6,22 @@ module.exports = (sequelize, dataTypes) => {
       primaryKey: true,
       autoIncrement: true,
     },
+    user: {
+      type: dataTypes.STRING,
+      allowNull: false,
+    },
+    email: {
+      type: dataTypes.STRING,
+      allowNull: false,
+    },
+    password: {
+      type: dataTypes.STRING,
+      allowNull: false,
+    },
+    remember_token: {
+      type: dataTypes.STRING,
+      allowNull: false,
+    },
     firstname: {
       type: dataTypes.STRING,
       allowNull: false,
@@ -19,7 +35,7 @@ module.exports = (sequelize, dataTypes) => {
       allowNull: false,
     },
     DNI: {
-      type: dataTypes.INTEGER,
+      type: dataTypes.STRING,
       allowNull: false,
     },
     birthday: {
@@ -27,9 +43,13 @@ module.exports = (sequelize, dataTypes) => {
       allowNull: false,
     },
     phone: {
-      type: dataTypes.INTEGER,
+      type: dataTypes.STRING,
       allowNull: true,
     },
+    type: {
+      type: dataTypes.STRING,
+      allowNull: false
+    }
   };
 
   let config = {
