@@ -18,30 +18,10 @@ module.exports = (sequelize, dataTypes) => {
       type: dataTypes.STRING,
       allowNull: false,
     },
-    gender: {
-      type: dataTypes.STRING,
+    price: {
+      type: dataTypes.DECIMAL(8,2),
       allowNull: false,
-    },
-    quality: {
-      type: dataTypes.STRING,
-      allowNull: false,
-    },
-    size: {
-      type: dataTypes.STRING,
-      allowNull: false,
-    },
-    color: {
-      type: dataTypes.STRING,
-      allowNull: false,
-    },
-    brand: {
-      type: dataTypes.STRING,
-      allowNull: false,
-    },
-    usestate: {
-      type: dataTypes.STRING,
-      allowNull: false,
-    },
+    }
   };
 
   let config = {
