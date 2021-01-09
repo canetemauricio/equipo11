@@ -11,13 +11,13 @@ module.exports = (sequelize, dataTypes) => {
         allowNull: false,
       },
       total: {
-        type: dataTypes.INTEGER.UNSIGNED,
+        type: dataTypes.DECIMAL(8,2),
         allowNull: false,
       },
-      product: {
+      cartID: {
         type: dataTypes.INTEGER
       },
-      product_cartID: {
+      productID: {
         type: dataTypes.INTEGER
       }
     };
