@@ -11,11 +11,11 @@ module.exports = (sequelize, dataTypes) => {
       allowNull: false,
     },
     subtotal: {
-      type: dataTypes.INTEGER.UNSIGNED,
+      type: dataTypes.DECIMAL(8,2),
       allowNull: false,
     },
     taxes: {
-      type: dataTypes.INTEGER.UNSIGNED,
+      type: dataTypes.DECIMAL(8,2),
       allowNull: true,
     },
     profileID: {
