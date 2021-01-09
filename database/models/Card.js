@@ -27,7 +27,7 @@ module.exports = (sequelize, dataTypes) => {
       allowNull: false,
     },
     expirationdate: {
-      type: dataTypes.DATE,
+      type: dataTypes.STRING,
       allowNull: false,
     },
     profileID: {
