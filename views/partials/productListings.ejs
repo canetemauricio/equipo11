@@ -1,13 +1,13 @@
-<% for (let i = 0; i < products.length; i++) { %>
+<% for (let i = 0; i < product.length; i++) { %>
 
 <article class="w-25 white pad">
   <div class="product-box box-shadow">
-    <a href="/products/<%=products.id %>">
+    <a href="/products/<%=product[i].id %>">
       <div>
         <div class="product-image">
           <div class="front-image">
-            <img
-              src="<%=products[i].image%>"
+            <img              
+              src="https://www.marni.com/12/12386489MT_13_n_r.jpg"
               alt=""
               width="100%"
               height="auto"
@@ -22,7 +22,7 @@
               class="align-left"
               style="display: inline-block; width: 60%; font-size: 24px"
             >
-              $<%= products.precio %>
+              $<%= product.price %>
             </p>
             <p
               class="align-end"
@@ -33,7 +33,7 @@
                 font-size: 14px;
               "
             >
-              <%=products[i].size%>
+              <%=product[i].size%>
             </p>
           </div>
           <div class="name-mar">
@@ -45,7 +45,7 @@
                 font-size: 14px;
               "
             >
-              <%= products.detalle %> <%=products[i].name%>
+              <%= product.detalle %> <%=product[i].name%>
             </p>
           </div>
         </div>

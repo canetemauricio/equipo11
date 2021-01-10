@@ -13,7 +13,7 @@
 <body>
 <%- include('../partials/social') %>     
 <%- include('../partials/header') %>
-    <main>     
+    <!-- <main>     
 
              <div class="w-20 Texto-Sombra Texto-productCreate Titulo-productCreate">Edicion de Productos</div>
      
@@ -93,13 +93,7 @@
               </div> 
 
             </form>
-                    <!-- <div class="Producto-Cantidad f-grow-5 px-2">
-                        <h1>Cantidad</h1>
-                        <h1>1</h1>
-                    </div>
-                    <div class="Producto-Precio f-grow-5 px-2">
-                        <h1>Precio</h1>
-                        <h1>$99.99</h1>-->
+                    
                     </div>
                </div>
             </div>
@@ -110,6 +104,24 @@
 
     </div>
       
+    </main> -->
+    <main>
+      <h1>Editar producto</h1>
+    <form action="/products/<%=product.id%>/edit" method="POST">
+        <div>
+            <label for="">name</label>
+            <input type="text" name="name" value="<%=product.name%>">
+        </div>
+        <div>
+            <label for="">description</label>
+            <input type="text" name="description" value="<%=product.description%>">
+        </div>
+        <div>
+            <label for="">price</label>
+            <input type="text" name="price" value="<%=product.price%>">
+        </div>       
+        <button type="submit">Editar</button>
+    </form>
     </main>
 
     <%- include('../partials/footer') %> 

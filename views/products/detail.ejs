@@ -35,20 +35,22 @@
 
     <div class="detail-box w-40">
         <p>Catálogo / Categoría / Producto</p>
-        <h1>NOMBRE DEL PRODUCTO</h1>
-        <h1>$99.99</h1>
-        <h3>Disponible: 2 unidades</h3>
-        <h3>Talle XL</h3>
+        <h1><%= product.name %></h1>
+        <h1>$<%= product.price %></h1>
+        <h3>Disponible: 2 unidades (WIP)</h3>
+        <% for (let i= 0; i < product.variant.length; i++) {%>
+        <h3><%=product.variant[i].size%></h3>
+        <% } %>
         <p><h3 class="product-quality">Calidad: 
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
         <i class="fas fa-star-half-alt"></i>
-        <i class="far fa-star"></i></h3></p>
+        <i class="far fa-star"></i>(WIP)</h3></p>
       
 
         <h4>Descripción</h4>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, eligendi nisi error optio suscipit non saepe? Sed, alias sint vitae commodi temporibus dolorem earum odio, labore necessitatibus, minus maiores reprehenderit? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, natus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore commodi qui officiis porro Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor, sit amet consectetur.</p>
+        <p><%= product.description %>.</p>
 
         <a href="/cart"><button class="button">COMPRAR</button></a>
         <BUtton Class="button">OFERTAR</BUtton>
@@ -88,8 +90,10 @@
 <form action="">
     <h3>REALIZÁ TU CONSULTA</h3>
     <textarea name="" id="" cols="250" rows="5" class="comment" placeholder="¿Cuál es tu consulta?"></textarea>
-    <button class="form-button">ENVIAR</button>
-    <input type="reset" class="form-button" value="BORRAR"></button>
+    <button class="form-button">ENVIAR</button>    
+</form>
+<form action="/products/<%=product.id%>/delete" method=POST>
+    <button type="submit">Borrar</button>
 </form>
 
 </div>

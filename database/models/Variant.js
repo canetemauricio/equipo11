@@ -48,8 +48,8 @@ module.exports = (sequelize, dataTypes) => {
   const variant = sequelize.define(alias, cols, config);
 
    variant.associate = function (models) {
-     variant.belongsToMany(models.variant, {
-       as: "variant",
+     variant.belongsToMany(models.product, {
+       as: "products",
        through: "product_variant",
        foreignKey: "variantID",
        otherKey: "productID",

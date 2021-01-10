@@ -10,12 +10,14 @@ router.get('/create', check_admin, productController.create) // con middelware p
 
 router.get('/search', productController.search)
 
-router.get('/:id', productController.show)
+router.get('/:id', productController.detail)
 
 router.get('/:id/edit', productController.edit)
-router.put('/:id/refresh', productController.refresh)
+router.post('/:id/edit', productController.refresh)
+
+
 router.post('/create',productController.save)
-router.delete('/:id/delete', productController.delete)
+router.post('/:id/delete', productController.delete)
 
 
 
