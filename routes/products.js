@@ -8,7 +8,7 @@ const validator = require("../middlewares/validator");
 
 router.get('/', productController.list)
 
-router.get('/create', authMiddleware, check_admin, productController.create) // con middelware para controlar que el user sea administrador
+router.get('/create', authMiddleware, check_admin, productController.create)
 router.post('/', authMiddleware, validator.createProduct, check_admin, productController.save)
 
 

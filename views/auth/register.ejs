@@ -10,9 +10,44 @@
     <%- include('../partials/social') %> 
     <%- include('../partials/header') %> 
     <%- include('../partials/errors') %> 
+    <script>
+      function validateForm() {
+        var user = document.form.user.value;
+        var password = document.form.password.value;       
+        var email = document.form.email.value;
+ 
+        if (user == null || user == '') {
+          alert('El usuario no puede estar vacio');
+          console.log('El usuario no puede estar vacio');
+          return false;
+        } else if (user.length < 2) {
+          alert('El usuario debe tener por lo menos 2 caracteres')
+          console.log('El usuario debe tener por lo menos 2 caracteres')
+          return false;
+        } else if (password.length < 6) {
+          alert('La contraseña debe tener por lo menos 6 caracteres')
+          console.log('La contraseña debe tener por lo menos 6 caracteres')
+          return false;
+        }
+ 
+        var atposition = email.indexOf('@');;
+        var dotposition = email.lastIndexOf('.')
+        
+        if (atposition<1 || dotposition<atposition+2 || dotposition+2>=email.length) {
+          alert('Por favor inrese un email valido');
+          return false;
+        }
+      }
+
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+
+        validateForm();
+      })
+    </script>
 
     
-    <form action="/auth/register" class="login" method="POST" enctype="multipart/form-data">
+    <form name='form' action="/auth/register" class="login" method="POST" enctype="multipart/form-data" id='form' onsubmit="return validateForm()">
       <h1>CREÁ TU CUENTA</h1>
       <div class="login-box">
         <div class="login-input">
@@ -23,6 +58,7 @@
             id="user"
             placeholder="Nombre de Usuario"
           />
+          <p><%= typeof errors == 'undefined' ? '' : errors.user ? errors.user.msg : '' %></p>
         </div>
 
         <div class="login-input">
@@ -33,6 +69,7 @@
             id="email"
             placeholder="Email"
           />
+          <p><%= typeof errors == 'undefined' ? '' : errors.email ? errors.email.msg : '' %></p>
         </div>
 
         <div class="login-input">
@@ -43,6 +80,7 @@
             id="password"
             placeholder="Contraseña"
           />
+          <p><%= typeof errors == 'undefined' ? '' : errors.password ? errors.password.msg : '' %></p>
         </div>
 
         <div class="login-input">
@@ -56,11 +94,11 @@
         </div>
 
         <div class="Remember">
-          <input class="check" type="checkbox" name="" id="" />Acepto los
+          <input class="check" type="checkbox" name="termsnconds" id="termsnconds" />Acepto los
           <a href="#">Términos y Condiciones</a>
         </div>
 
-        <input type="submit" value="Confirmar" class="button" />
+        <input type="submit" value="Confirmar" class="button" onclick='validateForm()' />
 
         <hr />
         <p><a href="/auth/login">Ya tengo una cuenta</a><br /></p>

@@ -10,6 +10,9 @@ module.exports = {
             .notEmpty()
             .withMessage('Campo Obligatorio')
             .bail()
+            .isLength( { min: 4})
+            .withMessage('El nombre de usuario debe tener un minimo de 4 caracteres')
+            .bail()
             .custom((value)=> {
                 return profile.findOne({
                     where: {
@@ -45,6 +48,7 @@ module.exports = {
                 .bail()
                 .isLength( { min: 4})
                 .withMessage('La contraseña debe tener un minimo de 4 caracteres')
+                .bail()
     ],
     login: [
         body('email')

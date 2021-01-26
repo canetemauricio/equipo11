@@ -13,8 +13,57 @@
 <body>
 <%- include('../partials/social') %>     
 <%- include('../partials/header') %>
+<script>
+  function validateForm() {
+    var category = document.form.category.value;
+    var name = document.form.name.value;       
+    var description = document.form.description.value;
+    var brand = document.form.brand.value;
+    var price = document.form.description.value;
+    var gender = document.form.description.value;
+
+    if (category == '' || category == 'Elegi' || category == null) {
+      alert('Seleccione una categoria')
+      console.log('Seleccione una categoria')
+      return false;
+    } else if (name.length < 4) {
+      alert('El nombre debe tener por lo menos 4 caracteres')
+      return false;
+    } else if (name.length > 24) {
+      alert('El nombre debe tener un maximo de 24 caracteres')
+      return false;
+    } else if (typeof price !== 'number') {
+      alert('Solo se aceptan numeros en el precio')
+      return false;
+    } else if (description.length < 32) {
+      alert('La descripcion debe tener un minimo de 32 caracteres')
+      return false;
+    } else if (description.length >255) {
+      alert('La descripcion debe tener un maximo de 255 caracteres')
+      return false;
+    } else if (brand.length < 4) {
+      alert('La marca debe tener por lo menos 4 caracteres')
+      return false;
+    } else if (brand.length > 20) {
+      alert('La marca debe tener un maximo de 20 caracteres')
+      return false;
+    } else if (gender.length < 4) {
+      alert('El genero debe tener por lo menos 4 caracteres (Recomendados: Masculino, Femenino, Mixto)')
+      return false;
+    } else if (gender.length > 10) {
+      alert('El genero debe tener un maximo de 10 caracteres (Recomendados: Masculino, Femenino, Mixto)')
+      return false;
+    }
+  }
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+
+    validateForm();
+  })
+</script>
     <main>     
-      <form action="/products" method="POST">
+      <form name='form' action="/products" method="POST" id='form' onsubmit='return validateForm()'>
 
              <div class="w-20 Texto-Sombra Texto-productCreate Titulo-productCreate"> Agregar nuevo Producto</div>
      
@@ -43,7 +92,7 @@
               <div class="Producto-Categoria f-grow-5 px-2 ">
                <label for="category"><h4>Seleccione Categoria</h4></label>
                <select name="category" id="category">
-                <option value="" selected disabled>Elegí</option>
+                <option value="" selected disabled>Elegi</option>
                 <% categories.forEach(category => { %>
                   <option value="<%= category.id %>"><%= category.category %></option>
                 <% }) %>

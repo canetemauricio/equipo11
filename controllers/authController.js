@@ -104,7 +104,7 @@ module.exports = {
         .catch((e) => console.log(e))
     } else {
       console.log(errors)
-      return res.render("./register", {
+      return res.render("./auth/register", {
         title: "CREATE ACCOUNT - MAG",
         errors: errors.mapped(),
         old: req.body,
