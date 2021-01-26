@@ -7,7 +7,7 @@
         <div class="product-image">
           <div class="front-image">
             <img              
-              src="https://www.marni.com/12/12386489MT_13_n_r.jpg"
+              src="<%= product[i].image %>"
               alt=""
               width="100%"
               height="auto"
@@ -20,9 +20,9 @@
             <!-- Detalle -->
             <p
               class="align-left"
-              style="display: inline-block; width: 60%; font-size: 24px"
+              style="display: inline-block; width: 60%; font-size: 24px; color: black"
             >
-              $<%= product.price %>
+              $<%= product[i].price %>
             </p>
             <p
               class="align-end"

@@ -22,8 +22,8 @@
 
     <div class="auth w-60 d-flex f-row f-end">
         <div class="login-text">
-          <% if(user){ %>
-              <p><%= user %> <p><form action="/auth/logout" method="POST"> <button>LOGOUT</button></form></p>
+          <% if(user.user) { %>
+              <p>Hola <%= user.user %> <p><form action="/auth/logout" method="POST"> <button>LOGOUT</button></form></p>
          <%  } else{ %>
               <p><a href="/auth/login"> LOGIN</a></p>
               <% } %>

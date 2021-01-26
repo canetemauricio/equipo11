@@ -20,27 +20,24 @@
 
     <div class=" d-flex f-column img-column">
 
-        <div class="miniature"><img src="/images/remera.jpg" alt=""></div>
+        <!-- <div class="miniature"><img src="/images/remera.jpg" alt=""></div>
         <div class="miniature"><img src="/images/remera2.jpg" alt=""></div>
         <div class="miniature"><img src="/images/remera3.jpg" alt=""></div>
         <div class="miniature"><img src="/images/remera4.jpg" alt=""></div>
-        <div class="miniature"><img src="/images/remera.jpg" alt=""></div>
+        <div class="miniature"><img src="/images/remera.jpg" alt=""></div> -->
         
 
     </div>
     
     <div class="img-box d-flex" >
-        <img src="/images/remera.jpg" alt="">
+        <img src="<%= product.image %>" alt="">
     </div>
 
     <div class="detail-box w-40">
         <p>Catálogo / Categoría / Producto</p>
         <h1><%= product.name %></h1>
         <h1>$<%= product.price %></h1>
-        <h3>Disponible: 2 unidades (WIP)</h3>
-        <% for (let i= 0; i < product.variant.length; i++) {%>
-        <h3><%=product.variant[i].size%></h3>
-        <% } %>
+        <h3>Disponible: 2 unidades (WIP)</h3>        
         <p><h3 class="product-quality">Calidad: 
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>

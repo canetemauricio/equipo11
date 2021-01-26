@@ -1,8 +1,11 @@
+const { validationResult } = require("express-validator");
 const fs = require("fs");
 const { RequestHeaderFieldsTooLarge } = require("http-errors");
 const { title } = require("process");
 let products = require("../data/products.json");
 let db = require("../database/models");
+
+const { product, category } = require('../database/models');
 
 module.exports = {
   // list: function (req, res) {
@@ -27,9 +30,7 @@ module.exports = {
   //   }
   // }, //  FUNCIONA
   detail: function (req, res) {
-    db.product.findByPk(req.params.id, {
-      include: [{association: "variant"}]
-    })
+    db.product.findByPk(req.params.id)
       .then(function(product) {
         res.render("./products/detail", {product:product})
       })    
@@ -46,31 +47,60 @@ module.exports = {
       title: "SEARCH RESULTS - MAG",
       results,
     });
-  }, //   FUNCIONA
+  }, 
   create: function (req, res) {
-    res.render("./products/create", { title: "NEW PRODUCT - MAG" });
-  }, //   FUNCIONA
+    const categories = category.findAll()
+
+    Promise.all([categories])
+      .then(([categories]) => res.render("./products/create", { categories, title: "NEW PRODUCT - MAG" }))
+      .catch(e => console.log(e))
+  }, 
   save: function (req, res) {
-    productsFile = fs.readFileSync("./data/products.json", {
-      encoding: "utf-8",
-    });
+    const errors = validationResult(req);
 
-    if (productsFile == "") {
-      productsList = [];
+    if(errors.isEmpty()){
+      const dBody = req.body;
+      dBody.price = Number(req.body.price)
+      dBody.categoriesID = Number(req.body.category)
+
+      product.create(dBody)
+        .then(product => {
+          return res.redirect(`/products/${product.id}`)
+        })
+        .catch(e => console.log(e))
     } else {
-      productsList = JSON.parse(productsFile);
+      const categories = category.findAll();
+
+      Promise.all([categories])
+        .then(([categories]) => res.render('./products/create', {
+          title: "NEW PRODUCT - MAG",
+          categories,
+          errors: errors.mapped(),
+          old: req.body})
+        .catch(e => console.log(e)))
     }
-    productsList.push({
-      id: productsList[productsList.length - 1].id + 1,
-      detalle: req.body.detalle,
-      precio: req.body.precio,
-    });
+  },
+  // save: function (req, res) {
+  //   productsFile = fs.readFileSync("./data/products.json", {
+  //     encoding: "utf-8",
+  //   });
 
-    let productsJSON = JSON.stringify(productsList);
-    fs.writeFileSync("./data/products.json", productsJSON);
+  //   if (productsFile == "") {
+  //     productsList = [];
+  //   } else {
+  //     productsList = JSON.parse(productsFile);
+  //   }
+  //   productsList.push({
+  //     id: productsList[productsList.length - 1].id + 1,
+  //     detalle: req.body.detalle,
+  //     precio: req.body.precio,
+  //   });
 
-    res.redirect("/products");
-  }, //   FUNCIONA
+  //   let productsJSON = JSON.stringify(productsList);
+  //   fs.writeFileSync("./data/products.json", productsJSON);
+
+  //   res.redirect("/products");
+  // }, //   FUNCIONA
   // edit: function (req, res) {
   //   let productId = req.params.id;
   //   let editing = products[productId - 1];
@@ -129,8 +159,7 @@ module.exports = {
         id: req.params.id
       }
     })
-    console.log('error 1');
+    .then()
     res.redirect("/products");
-    console.log('error 2');
   }
 };

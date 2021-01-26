@@ -2,7 +2,7 @@
 
 module.exports = function(req, res, next) {
 
-    if ( req.session.loggedUser== "ADMIN") {
+    if ( req.session.user.type == 'admin') {
         next();
 
     } else {

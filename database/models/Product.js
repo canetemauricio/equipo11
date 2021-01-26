@@ -21,12 +21,28 @@ module.exports = (sequelize, dataTypes) => {
     price: {
       type: dataTypes.DECIMAL(8,2),
       allowNull: false,
+    },
+    gender: {
+      type: dataTypes.STRING,
+      allowNull: false,
+    },
+    brand: {
+      type: dataTypes.STRING,
+      allowNull: false,
+    },
+    deletedAt: {
+      type: dataTypes.DATE,
+    },
+    categoriesID: {
+      type: dataTypes.INTEGER,
+      foreignKey: true,      
     }
   };
 
   let config = {
     tableName: "product",
     timestamps: false,
+    paranoid: true,
   };
 
   const product = sequelize.define(alias, cols, config);
@@ -38,12 +54,9 @@ module.exports = (sequelize, dataTypes) => {
       foreignKey: 'cartID',
       otherKey: "productID"
     })
-    product.belongsToMany(models.variant, {
-      as: "variant",
-      through: "product_variant",
-      foreignKey: "productID",
-      otherKey: "variantID",
-      timestamps: false,
+    product.belongsTo(models.category, {
+      as: "category",
+      foreignKey: "categoriesID",
     })
   }
 

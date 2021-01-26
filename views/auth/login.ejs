@@ -11,12 +11,13 @@
     <%- include('../partials/header') %> 
     <%- include('../partials/errors') %> 
     
-    <form action="/auth/validate" class="login" method="POST">
+    <form action="/auth/login" class="login" method="POST">
       <h1>INICIAR SESIÓN</h1>
       <div class="login-box">
         <div class="login-input">
           <i class="fas fa-envelope"></i>
-          <input type="text" name="email" id="email" placeholder="Email" />
+          <input type="email" name="email" id="email" placeholder="Email" />
+          <p><%= typeof errors == 'undefined' ? '' : errors.email ? errors.email.msg : '' %></p>
         </div>
 
         <div class="login-input">

@@ -16,11 +16,17 @@ var checklogin = require("../middlewares/check-login");
 const { check, validationResult, body } = require("express-validator");
 let fs = require('fs');
 const signUpMiddleware = require("../middlewares/signUpMiddleware");
+const validator = require("../middlewares/validator");
+const guestMiddleware = require('../middlewares/guest');
 
-router.get("/login", authController.login); //LISTO
-router.post("/validate", authController.validateLogin); // LISTO
-router.get("/register", authController.register); // LISTO
-router.post("/registred",  upload.any(),signUpMiddleware, authController.newUser); //LISTO
-router.post("/logout", authController.logout) // LISTO
+router.get("/login", authController.login);
+router.post("/login", guestMiddleware, validator.login, authController.validateLogin);
+
+
+router.get("/register", authController.register);
+router.post("/register",  upload.any(),signUpMiddleware, authController.store);
+
+
+router.post("/logout", authController.logout);
 
 module.exports = router;

@@ -14,6 +14,7 @@ var authRouter = require('./routes/auth')
 
 var checkIP = require("./middlewares/check-ip");
 const checkIp = require('./middlewares/check-ip');
+const logMiddleware = require('./middlewares/log.js');
 
 var app = express();
 
@@ -28,12 +29,20 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(session({secret:'MAG',resave: false, saveUninitialized:true}))
-app.use(function (req,res,next){
-  if(req.session !=undefined){
-    res.locals.user = req.session.loggedUser
-    next()
+// app.use(function (req,res,next){
+//   if(req.session !=undefined){
+//     res.locals.user = req.session.loggedUser
+//     next()
+//   }
+// })
+app.use(function(req, res, next) {
+  console.log(req.session.user)
+  if (req.session.user != undefined) {
+    res.locals.user = req.session.user
   }
+  return next()
 })
+app.use(logMiddleware)
 
 app.use('/', indexRouter);
 app.use('/products', heroesRouter)
