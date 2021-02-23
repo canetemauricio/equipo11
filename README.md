@@ -7,6 +7,10 @@ npm start
 
 http://localhost:3000/
 
+Dashboard: https://github.com/NithHG/mag-dashboard
+
+Los productos deben ser añadidos desde la aplicación
+
 
 Este proyecto se trata de **un ecommerce** orientado a personas interesadas ***en vender,comprar o canjear cualquier producto de indumentaria nueva y usada***.
 Cuando comenzamos a planificar este proyecto, descubrimos que existe una oportunidad para ofrecer un marketplace especializado para la comercialización de todo tipo de indumentaria, donde podremos brindar mas servicios y mejores métodos de valor para la venta, diferenciandonos de los actuales canales utilizados por los usuarios como MercadoLibre o redes sociales. 
