@@ -1,5 +1,11 @@
 # Grupo 1 - MAG
 
+How to run: 
+Run database/scripts/structure.sql and then data.sql
+npm start
+http://localhost:3000/
+
+
 Este proyecto se trata de **un ecommerce** orientado a personas interesadas ***en vender,comprar o canjear cualquier producto de indumentaria nueva y usada***.
 Cuando comenzamos a planificar este proyecto, descubrimos que existe una oportunidad para ofrecer un marketplace especializado para la comercialización de todo tipo de indumentaria, donde podremos brindar mas servicios y mejores métodos de valor para la venta, diferenciandonos de los actuales canales utilizados por los usuarios como MercadoLibre o redes sociales. 
 En lineas generales, la empresa será quien se encargue de vender e intermediar los productos del vendedor con el comprador. El vendedor deberá registrase en el sitio, y una vez verificado que los productos cumplen los requisitos de calidad mínimos, estos serán retirados por la empresa e ingresaran a su stock para ser preparados y publicados. En contra prestación, el vendedor obtendrá un crédito virtual por el valor de las prendas o lote de productos que entrega en consignación, y a medida que se vayan vendiendo, este crédito se ira monetizando en pesos en la cuenta del vendedor.
@@ -67,14 +73,6 @@ Soy Diseñador Industrial, Ingeniero Comercial y tengo una maestria en direccion
 ## Instalacion
 
 ```git clone https://github.com/canetemauricio/equipo11/README.md```
-
-
-
-## Utilizacion
-
-Ingresar a ```http://localhost/proyecto/index.html``` 
-
-
 
 ## Recursos
 
