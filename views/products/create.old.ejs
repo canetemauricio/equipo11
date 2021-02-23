@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('../partials/head') %>
+
+<link rel='stylesheet' href='/stylesheets/header.css' />
+<link rel='stylesheet' href='/stylesheets/productCreate.css' />
+<link rel="stylesheet" href="/stylesheets/Producto.css">
+<link rel='stylesheet' href='/stylesheets/footer.css' />
+<link rel='stylesheet' href='/stylesheets/common.css' />
+
+</head>
+
+<body>
+  <%- include('../partials/social') %>
+  <%- include('../partials/header') %>
+  <script>
+    function validateForm() {
+      var category = document.form.category.value;
+      var name = document.form.name.value;
+      var description = document.form.description.value;
+      var brand = document.form.brand.value;
+      var price = document.form.price.value;
+      var gender = document.form.gender.value;
+
+      if (category == '' || category == 'Elegi' || category == null) {
+        alert('Seleccione una categoria')
+        return false;
+      } else if (name.length < 4) {
+        alert('El nombre debe tener por lo menos 4 caracteres')
+        return false;
+      } else if (name.length > 24) {
+        alert('El nombre debe tener un maximo de 24 caracteres')
+        return false;
+      } else if (isNaN(price)) {
+        alert('Solo se aceptan numeros en el precio')
+        return false;
+      } else if (description.length < 32) {
+        alert('La descripcion debe tener un minimo de 32 caracteres')
+        return false;
+      } else if (description.length > 255) {
+        alert('La descripcion debe tener un maximo de 255 caracteres')
+        return false;
+      } else if (brand.length < 4) {
+        alert('La marca debe tener por lo menos 4 caracteres')
+        return false;
+      } else if (brand.length > 20) {
+        alert('La marca debe tener un maximo de 20 caracteres')
+        return false;
+      } else if (gender.length < 4) {
+        alert('El genero debe tener por lo menos 4 caracteres (Recomendados: Masculino, Femenino, Mixto)')
+        return false;
+      } else if (gender.length > 10) {
+        alert('El genero debe tener un maximo de 10 caracteres (Recomendados: Masculino, Femenino, Mixto)')
+        return false;
+      }
+    }
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+
+      validateForm();
+    })
+  </script>
+  <main>
+    <form name='form' action="/products" method="POST" id='form' onsubmit='return validateForm()'>
+      <div class="w-20 Texto-Sombra Texto-productCreate Titulo-productCreate"> Agregar nuevo Producto</div>
+      <div class="Titulos d-flex justify-center">
+        <div class="Resumen-productCreate" style="width: 80%;">
+          <div class="Titulos d-flex justify-center">
+
+            <!-- <div class="Producto-Imagen px-2 ">
+                    <div>
+                        <img src="/images/buzonew.jpg" alt="prod">
+                    </div>
+                    <div>
+                        <div class="d-flex flex-row justify-center space margin20">
+                            <button type="submit" class="Button-style">Agregar</button>
+                            <button type="reset" class="Button-style">Restaurar</button>
+                         </div>
+                    </div>
+                </div>    -->
+            <div class="d-flex w-70">
+
+              <div class=" d-flex f-column">
+
+
+
+                <div class="Producto-Categoria f-grow-5 px-2 ">
+                  <label for="category">
+                    <h2>Seleccione Categoria</h2>
+                  </label>
+                  <select name="category" id="category">
+                    <option value="" selected disabled>Elegi</option>
+                    <% categories.forEach(category => { %>
+                    <option value="<%= category.id %>"><%= category.category %></option>
+                    <% }) %>
+                  </select>
+                  <p style="color: red; font-size: 12px;">
+                    <%= typeof errors == 'undefined' ? '' : errors.category ? errors.category.msg : '' %></p>
+                </div>
+
+                <div class="Producto-Marca f-grow-5 px-2">
+                  <label for="name">
+                    <h4>Nombre?</h4>
+                  </label>
+                  <input type="text" name="name" id="name" placeholder="Ej: Camiseta Linda"
+                    value="<%= typeof old != 'undefined' ? old.name : '' %>">
+                  <p style="color: red; font-size: 12px;">
+                    <%= typeof errors == 'undefined' ? '' : errors.name ? errors.name.msg : '' %></p>
+                </div>
+
+                <div class="Producto-Descripcion f-grow-5 px-2">
+                  <label for="description">
+                    <h4>Descripcion?</h4>
+                  </label>
+                  <textarea name="description" id="description" cols="25"
+                    rows="4"><%= typeof old != 'undefined' ? old.description : '' %></textarea>
+                  <p style="color: red; font-size: 12px;">
+                    <%= typeof errors == 'undefined' ? '' : errors.description ? errors.description.msg : '' %></p>
+                </div>
+                <br>
+
+
+                <!-- <div class="Producto-Uso f-grow-5 px-2">
+                      <label for=""><h4>Es Nuevo o Usado?</h4></label>
+                      <input type="radio" name="uso" value="Nuevo" checked> Nuevo
+                      <input type="radio" name="uso" value="Usado" checked> Usado
+              </div> -->
+
+                <!-- <div class="Producto-Estado f-grow-5 px-2">
+                <label for=""><h4>Como esta tu prenda?</h4></label>
+                <select name="estado" id="">
+                   <option value="impecable"><h4>Impecable!</h4></option>
+                   <option value="buena"><h4>Con algo de uso</h4></option>
+                   <option value="regular"><h4>Tiene algunas cosas</h4></option>
+                </select>
+              </div>      -->
+
+                <!-- <div class="Producto-Talle f-grow-5 px-2">
+                <label for="talle"><h4>Cual es el talle?</h4></label>
+                <input type="text" name="talle">
+              </div>  -->
+
+                <!-- <div class="Producto-Color f-grow-5 px-2">
+                <label for="color"><h4>Que color es?</h4></label>
+                <input type="text" name="color">
+              </div>  -->
+
+                <div class="Producto-Marca f-grow-5 px-2">
+                  <label for="brand">
+                    <h4>Es de alguna marca?</h4>
+                  </label>
+                  <input type="text" name="brand" id="brand" value="<%= typeof old != 'undefined' ? old.brand : '' %>">
+                  <p style="color: red; font-size: 12px;">
+                    <%= typeof errors == 'undefined' ? '' : errors.brand ? errors.brand.msg : '' %></p>
+                </div>
+
+
+                <div class="Producto-Precio f-grow-5 px-2">
+                  <label for="price">
+                    <h4>A cuanto lo vendes?</h4>
+                  </label>
+                  <input type="text" name="price" id="price" value="<%= typeof old != 'undefined' ? old.price : '' %>">
+                  <p style="color: red; font-size: 12px;">
+                    <%= typeof errors == 'undefined' ? '' : errors.price ? errors.price.msg : '' %></p>
+                </div>
+
+                <div class="Producto-Precio f-grow-5 px-2">
+                  <label for="gender">
+                    <h4>Para hombre o mujer?</h4>
+                  </label>
+                  <input type="text" name="gender" id="gender"
+                    value="<%= typeof old != 'undefined' ? old.gender : '' %>">
+                  <p style="color: red; font-size: 12px;">
+                    <%= typeof errors == 'undefined' ? '' : errors.gender ? errors.gender.msg : '' %></p>
+                </div>
+
+                <div class="Producto-Descripcion f-grow-5 px-2">
+                  <label for="image">
+                    <h4>Image Link? (will remove after I get files working)</h4>
+                  </label>
+                  <textarea name="image" id="image" cols="25"
+                    rows="4">https://i.pinimg.com/originals/67/de/e4/67dee4e83ce9365a1cbc4cdd225a655b.jpg</textarea>
+                  <p style="color: red; font-size: 12px;">
+                    <%= typeof errors == 'undefined' ? '' : errors.image ? errors.image.msg : '' %></p>
+                </div>
+                <div class="d-flex flex-row justify-center space margin20">
+                  <button type="submit" class="Button-style">Agregar</button>
+                  <button type="reset" class="Button-style">Restaurar</button>
+                </div>
+
+
+
+    </form>
+    </div>
+    </div>
+    </div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+  </main>
+
+  <%- include('../partials/footer') %>
+
+</body>
+
+</html>

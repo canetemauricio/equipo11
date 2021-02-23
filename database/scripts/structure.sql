@@ -49,6 +49,16 @@ CREATE TABLE categories (
 	id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
     category VARCHAR(24) NOT NULL
 	);
+
+CREATE TABLE gender (
+	id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+    gender VARCHAR(24) NOT NULL
+	);
+
+CREATE TABLE brand (
+	id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+    brand VARCHAR(24) NOT NULL
+	);    
     
 CREATE TABLE product (
 	id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
@@ -56,11 +66,14 @@ CREATE TABLE product (
     image VARCHAR(255) NOT NULL,
     description VARCHAR(255) NOT NULL,
     price DECIMAL(8,2) NOT NULL,
-    gender VARCHAR(10) NOT NULL,
-    brand VARCHAR(20) NOT NULL,
     deletedAt TIMESTAMP,
     categoriesID INT UNSIGNED,
-	FOREIGN KEY (categoriesID) REFERENCES categories(id)
+    genderID INT UNSIGNED,
+    brandID INT UNSIGNED,
+    stock INT(100) UNSIGNED,
+	FOREIGN KEY (categoriesID) REFERENCES categories(id),
+    FOREIGN KEY (genderID) REFERENCES gender(id),
+    FOREIGN KEY (brandID) REFERENCES brand(id)    
     );
     
 CREATE TABLE cart (

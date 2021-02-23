@@ -3,6 +3,7 @@
 <link rel='stylesheet' href='/stylesheets/registro.css' />
 <link rel='stylesheet' href='/stylesheets/common.css' />
 <link rel='stylesheet' href='/stylesheets/header.css' />
+<link rel='stylesheet' href='/stylesheets/footer.css' />
 </head>
 
   <body>
@@ -10,35 +11,9 @@
     <%- include('../partials/social') %> 
     <%- include('../partials/header') %> 
     <%- include('../partials/errors') %> 
-    <script>
-      function validateForm() {
-        // var user = document.form.user.value;
-        var password = document.form.password.value;       
-        var email = document.form.email.value;
- 
-        if (password.length == '') {
-          alert('La contraseña no puede estar vacia')
-          console.log('La contraseña no puede estar vacia')
-          return false;
-        }
- 
-        var atposition = email.indexOf('@');;
-        var dotposition = email.lastIndexOf('.')
-        
-        if (atposition<1 || dotposition<atposition+2 || dotposition+2>=email.length) {
-          alert('Por favor ingrese un email valido');
-          return false;
-        }
-      }
-
-      form.addEventListener('submit', e => {
-        e.preventDefault();
-
-        validateForm();
-      })
-    </script>
+    <script src="/scripts/login.js"></script>
     
-    <form name='form' action="/auth/login" class="login" method="POST" id='form' onsubmit="return validateForm()">
+    <form name='form' action="/auth/login" class="login-site" method="POST" id='form'>
       <h1>INICIAR SESIÓN</h1>
       <div class="login-box">
         <div class="login-input">
@@ -57,9 +32,9 @@
           />
         </div>
 
-        <div class="Remember">
+        <!-- <div class="Remember">
           <input class="check" type="checkbox" name="" id="" />Recordarme
-        </div>
+        </div> -->
 
         <input type="submit" value="Ingresar" class="button" />
 

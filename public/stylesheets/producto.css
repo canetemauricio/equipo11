@@ -16,6 +16,12 @@ body {
   flex-direction: column;
 }
 
+.product-detail-image {
+  width: 70%;
+  display: block;
+  margin: auto;
+}
+
 .product-box {
   width: 95%;
   margin: 10vh auto;
@@ -61,6 +67,10 @@ body {
   border-radius: 5px;
   cursor: pointer;
   margin-bottom: 10px;
+}
+
+.button-detail {
+  width: 100%;
 }
 
 .chat-box {

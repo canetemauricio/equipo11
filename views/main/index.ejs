@@ -1,40 +1,44 @@
-
-<%- include('../partials/head') %> 
+<%- include('../partials/head') %>
 
 <link rel='stylesheet' href='/stylesheets/header.css' />
 <link rel='stylesheet' href='/stylesheets/index.css' />
 <link rel='stylesheet' href='/stylesheets/footer.css' />
+<link rel='stylesheet' href='/stylesheets/listing.css' />
 
 </head>
+
 <body>
-<%- include('../partials/social') %> 
-<%- include('../partials/header') %> 
-<!-- <div class="d-flex w-100">
-  <img src="/images/croppedcover.jpeg" width="100%" alt="">
-</div>-->
-<div class="d-flex column">
-  <div class="title padding-title-1">RECIEN LLEGADOS</div>
-  <div class="paragraph">
-    Descubri lo nuevo que ingreso en MAG
+  <%- include('../partials/social') %>
+  <%- include('../partials/header') %>
+  <div class="d-flex w-100 index-border-bottom">
+    <img src="/images/croppedcover.png" width="100%" alt="">
   </div>
-  <!-- ============IMAGES NEED WORK====================!!!!!!!! -->
-  <div class="d-flex margin-img row space-ar">
-    <article>
+  <div class="d-flex column">
+    <div class="title padding-title-1"><h2>RECIEN LLEGADOS</h2></div>
+    <div class="paragraph">
+      <h3>Descubri lo nuevo que ingreso en MAG</h3>
+    </div>
+    <div class="d-flex margin-img row space-ar">
+      <!-- <article>
       <img class="auto-w" src="images/bermuda_hombre.jpg" />
-    </article>
-    <article>
+    </article> -->
+      <%- include('../partials/indexListings') %>
+      <%- include('../partials/indexListings') %>
+      <!-- <article>
       <img class="auto-w" src="images/saco.jpg" />
-    </article>
+    </article> -->
+    </div>
   </div>
-</div>
-<div class="d-flex column bg-light-blue">
-  <div class="title padding-title-1">PRODUCTOS PROMOCIONADOS</div>
-  <div class="paragraph">
-    Nuestra sugerencia para verte mejor
-  </div>
-  <!-- ============IMAGES NEED WORK====================!!!!!!!! -->
-  <div class="d-flex margin-img row space-ar">
-    <article>
+  <div class="d-flex column bg-light-blue">
+    <div class="title padding-title-1"><h2>PRODUCTOS PROMOCIONADOS</h2></div>
+    <div class="paragraph">
+      <h3>Nuestra sugerencia para verte mejor</h3>
+    </div>
+    <div class="d-flex margin-img row space-ar">
+      <%- include('../partials/indexListings') %>
+      <%- include('../partials/indexListings') %>
+      <%- include('../partials/indexListings') %>
+      <!-- <article>
       <img class="auto-w" src="images/pantalon.jpg" />
       <div>Pantalon Hombre Marron</div>
     </article>
@@ -45,39 +49,45 @@
     <article>
       <img class="auto-w" src="images/jean_azul.jpg" />
       <div>Jean Mujer Celeste</div>
-    </article>
-  </div>
-  <div class="center margin-button">
+    </article> -->
+    </div>
+    <!-- <div class="center margin-button">
     <button type="button" class="button">VER TODOS</button>
-  </div>
+  </div> -->
+  
+  <div class="first-bg d-flex title column fit-bg">
+    <div class="fit-margin h-100" id="busca-tu-fit">
+    <div class="title padding-title-1"><h2>BUSCÁ TU FIT</h2></div>
+    <div class="paragraph">
+      Te damos los mejores consejos y combinaciones para que mejores tu look
+    </div>
+    <div>
+      <a href="/products"><button type="button" class="button">EMPEZAR</button></a>
+    </div>
+  </div>  
 </div>
-<div class="first-bg d-flex title padding-title-1 column">
-  <div class="title padding-title-1">BUSCÁ TU FIT</div>
-  <div class="paragraph">
-    Te damos los mejores consejos y combinaciones para que mejores tu look
-  </div>
-  <div>
-    <button type="button" class="button">EMPEZAR</button>
-  </div>
-</div>
-<div class="d-flex column bg-light-blue">
-  <div class="title padding-title-1">PROMOCIONES</div>
-  <div class="paragraph">
-    Aprovechá todas las promociones y descuentos que tenemos para ofrecerte
-  </div>
-  <!-- ============IMAGES NEED WORK====================!!!!!!!! -->
-  <div class="d-flex margin-img row space-ar">
-    <article>
+  <div class="d-flex column bg-light-blue">
+    <div class="title padding-title-1"><h2>VER TODOS LOS PRODUCTOS</h2></div>
+    <div class="paragraph">
+      <h3>Aprovechá todas las promociones y descuentos que tenemos para ofrecerte</h3>
+    </div>
+    <div class="d-flex margin-img row space-ar">
+      <%- include('../partials/indexListings') %>
+      <%- include('../partials/indexListings') %>
+      <!-- <article>
       <img class="auto-w" src="images/zapatillas.jpg" />
       <div>Zapatillas Mujer</div>
     </article>
     <article>
       <img class="auto-w" src="images/buzo_nino.jpg" />
       <div>Buzo Niño</div>
-    </article>
-  </div>
-  <div class="d-flex margin-img row space-ar">
-    <article>
+    </article> -->
+    </div>
+    <div class="d-flex margin-img row space-ar">
+      <%- include('../partials/indexListings') %>
+      <%- include('../partials/indexListings') %>
+      <%- include('../partials/indexListings') %>
+      <!-- <article>
       <img class="auto-w" src="images/chomba_nino.jpg" />
       <div>Chomba Niño</div>
     </article>
@@ -88,13 +98,13 @@
     <article>
       <img class="auto-w" src="images/buzo_canguro.jpg" />
       <div>Buzo Canguro Hombre</div>
-    </article>
+    </article> -->
+    </div>
+    <div class="center margin-button"><a href="/products">      <button type="button" class="button center">VER TODOS</button>
+</a>
+    </div>
   </div>
-  <div class="center margin-button">
-    <button type="button" class="button center">VER TODOS</button>
-  </div>
-</div>
-<div class="d-flex column bg-lgray">
+  <!-- <div class="d-flex column bg-lgray">
   <div class="title padding-title-1">¿COMO FUNCIONA?</div>
   <div class="d-flex margin-img row space-ar">
     <article>
@@ -108,13 +118,12 @@
   <div class="center margin-button">
     <button class="button">QUIERO VENDER!</button>
   </div>
-</div>
-<div class="d-flex column bg-light-blue">
+</div> -->
+  <!-- <div class="d-flex column bg-light-blue">
   <div class="title padding-title-1">PROXIMOS INGRESOS</div>
   <div class="paragraph">
     Conoce lo nuevo que esta por llegar a MAG
   </div>
-  <!-- ============IMAGES NEED WORK====================!!!!!!!! -->
   <div class="d-flex margin-img row space-ar">
     <article>
       <img class="auto-w" src="images/camisa_hombre.jpg" />
@@ -132,12 +141,14 @@
   <div class="center margin-button padding-title-1">
     <button type="button" class="button">VER TODOS</button>
   </div>
-</div>
-<div class="title padding-title-1 bg-lgray">
-  SUSCRIBITE A NUESTRO NEWSLETTER
-</div>
+</div> -->
+<%- include('../partials/backButton') %>
+  <div class="title padding-title-1 bg-lgray">
+    SUSCRIBITE A NUESTRO NEWSLETTER
+  </div>
 
-<%- include('../partials/backButton') %> 
-<%- include('../partials/footer') %> 
+  
+  <%- include('../partials/footer') %>
 </body>
+
 </html>

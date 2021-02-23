@@ -1,0 +1,39 @@
+<div>
+  <% if ( CHECK == '1') { %>
+  <div class="cat-title"><%= TITLE %></div>
+  <% } else if ( CHECK == '2') { %>
+    <div class="cat-title"><%= TITLE %></div>
+    <% } else if ( CHECK == '3') { %>
+      <div class="cat-title"><%= TITLE %></div>
+      <% } %>
+  <div class="text-div"></div>
+  <div class="d-flex f-column">
+    <% for (let i = 0; i < CatSELECTOR.length; i++) { %>
+    <div class="f-row">      
+      <% if ( CHECK == '1') { %>
+        <input type="checkbox" id="category" name="category" value= <%= CatSELECTOR[i].id %>/>
+      <label class="all-cats" for=""><%= CatSELECTOR[i].category %></label>
+      <% } else if ( CHECK == '2') { %>
+        <input type="checkbox" id="gender" name="gender" value= <%= CatSELECTOR[i].id %>/>
+        <label class="all-cats" for=""><%= CatSELECTOR[i].gender %></label>
+        <% } else if ( CHECK == '3') { %>
+          <input type="checkbox" id="brand" name="brand" value= <%= CatSELECTOR[i].id %>/>
+          <label class="all-cats" for=""><%= CatSELECTOR[i].brand %></label>
+          <% } %>
+    </div>
+    <% } %>
+    <!-- <div class="f-row">
+      <input type="checkbox" id="" name="" value="" />
+      <label class="all-cats" for="">Checkbox</label>
+    </div>
+    <div class="f-row">
+      <input type="checkbox" id="" name="" value="" />
+      <label class="all-cats" for="">Checkbox</label>
+    </div>
+    <div class="f-row">
+      <input type="checkbox" id="" name="" value="" />
+      <label class="all-cats" for="">Checkbox</label>
+    </div> -->
+  </div>
+</div>
+

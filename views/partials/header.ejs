@@ -1,21 +1,20 @@
-
-<link rel='stylesheet' href='/stylesheets/index.css' />
+<link rel="stylesheet" href="/stylesheets/index.css" />
 
 <header>
   <nav>
-    <div class="menu d-flex f-row bg-light-blue">
+    <div class="menu d-flex f-row bg-light-blue-header">
       <div class="logo"><img src="/images/image.png" alt="" /></div>
       <div class="link"><a href="/"> HOME</a></div>
       <div class="link"><a href="/products"> CATÁLOGO</a></div>
       <div class="link"><a href="/products/create">NUEVO PRODUCTO</a></div>
 
       <div class="search">
-        <form action="/products/search" method="GET" class="search-form">
+        <form action="/search" method="GET" class="search-form">
           <div class="search-field d-flex">
             <input
               type="text"
-              name="producto"
-              id="producto"
+              name="search"
+              id="search"
               class="search-input"
               placeholder="Buscar"
             />

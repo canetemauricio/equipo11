@@ -4,11 +4,7 @@ const { title } = require("process");
 let users = require("../data/users.json");
 const { check, validationResult, body } = require("express-validator");
 
-const {
-  profile,
-  product,
-  cart,
-} = require('../database/models');
+const { profile, product, cart } = require("../database/models");
 
 module.exports = {
   login: function (req, res) {
@@ -18,35 +14,36 @@ module.exports = {
     res.render("./auth/register", { title: "CREATE ACCOUNT - MAG" });
   }, // FUNCIONA
 
-  validateLogin: function(req, res) {
+  validateLogin: function (req, res) {
     let errors = validationResult(req);
 
     if (errors.isEmpty()) {
-      profile.findOne({
-        where: {
-          email: req.body.email
-        }
-      })
+      profile
+        .findOne({
+          where: {
+            email: req.body.email,
+          },
+        })
         .then((user) => {
-          let dUser = { ...user.dataValues}
+          let dUser = { ...user.dataValues };
           req.session.user = dUser;
 
-          if(req.body.remember) {
-            console.log('RememberTokenWIP')
-            return res.redirect('/')
+          if (req.body.remember) {
+            console.log("RememberTokenWIP");
+            return res.redirect("/");
           } else {
-            console.log(errors)
-            return res.redirect('/')
-          }          
+            console.log(errors);
+            return res.redirect("/");
+          }
         })
-        .catch((e) => console.log(e))
+        .catch((e) => console.log(e));
     } else {
-      console.log(errors)
+      console.log(errors);
       return res.render("./auth/login", {
         title: "LOGIN - MAG",
         errors: errors.mapped(),
-        old: req.body
-      })
+        old: req.body,
+      });
     }
   },
 
@@ -89,26 +86,27 @@ module.exports = {
   //   }
   // },
 
-  store: function(req, res) {
+  store: function (req, res) {
     const errors = validationResult(req);
 
     if (errors.isEmpty()) {
       const dBody = req.body;
-      var salt = bcrypt.genSaltSync(10)
+      var salt = bcrypt.genSaltSync(10);
       dBody.password = bcrypt.hashSync(dBody.password, salt);
-      dBody.type = 'admin';
+      dBody.type = "admin";
       // dBody.image = reqfile ? req.file.filename : null;
 
-      profile.create(dBody)
-        .then(res.redirect('./login'))
-        .catch((e) => console.log(e))
+      profile
+        .create(dBody)
+        .then(res.redirect("./login"))
+        .catch((e) => console.log(e));
     } else {
-      console.log(errors)
+      console.log(errors);
       return res.render("./auth/register", {
         title: "CREATE ACCOUNT - MAG",
         errors: errors.mapped(),
         old: req.body,
-      })
+      });
     }
   },
 

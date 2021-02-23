@@ -1,14 +1,11 @@
-var express = require('express');
-const mainController = require('../controllers/mainController');
+var express = require("express");
+const mainController = require("../controllers/mainController");
 var router = express.Router();
-var checkIP = require("../middlewares/check-ip")
+var checkIP = require("../middlewares/check-ip");
 
-router.get('', checkIP, mainController.home)  // incorpore checkIP del Middleware para la pagina Index
-router.get('/creditos', mainController.about)
-router.get('/cart', mainController.cart)
-
-
-
-
+router.get("", checkIP, mainController.home); // incorpore checkIP del Middleware para la pagina Index
+router.get("/search", mainController.search);
+router.get("/creditos", mainController.about);
+router.get("/cart", mainController.cart);
 
 module.exports = router;

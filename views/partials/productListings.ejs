@@ -6,11 +6,12 @@
       <div>
         <div class="product-image">
           <div class="front-image">
-            <img              
-              src="<%= product[i].image %>"
+            <img
+              src="/images/<%= product[i].image %>"
+              class="fit-contain"
               alt=""
               width="100%"
-              height="auto"
+              height="375px"              
             />
           </div>
           <div class="quick-view">Comprar</div>
@@ -20,7 +21,12 @@
             <!-- Detalle -->
             <p
               class="align-left"
-              style="display: inline-block; width: 60%; font-size: 24px; color: black"
+              style="
+                display: inline-block;
+                width: 60%;
+                font-size: 24px;
+                color: black;
+              "
             >
               $<%= product[i].price %>
             </p>

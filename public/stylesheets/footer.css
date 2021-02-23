@@ -3,8 +3,16 @@ footer {
   text-align: center;
 }
 
+footer {
+  background-color: lightgray;
+}
+
 footer a {
   color: #3d3d3d;
+}
+
+.align-left {
+  text-align: left;
 }
 
 .d-flex {
@@ -17,7 +25,7 @@ footer a {
 
 footer {
   background-color: none;
-  padding: 7%;
+  padding: 1%;
 }
 
 .f-title {

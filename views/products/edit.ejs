@@ -1,130 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<%- include('../partials/head') %> 
+<%- include('../partials/head') %>
 
 <link rel='stylesheet' href='/stylesheets/header.css' />
 <link rel='stylesheet' href='/stylesheets/productCreate.css' />
-<link rel="stylesheet" href="/stylesheets/Producto.css">
+<link rel='stylesheet' href='/stylesheets/social.css' />
+<!-- <link rel="stylesheet" href="/stylesheets/Product.css"> -->
 <link rel='stylesheet' href='/stylesheets/footer.css' />
 <link rel='stylesheet' href='/stylesheets/common.css' />
 
 </head>
+
 <body>
-<%- include('../partials/social') %>     
-<%- include('../partials/header') %>
-    <!-- <main>     
+  <%- include('../partials/social') %>
+  <%- include('../partials/header') %>
+  <script>
+    function validateForm() {
+      var category = document.form.category.value;
+      var name = document.form.name.value;
+      var description = document.form.description.value;
+      var brand = document.form.brand.value;
+      var price = document.form.price.value;
+      var gender = document.form.gender.value;
 
-             <div class="w-20 Texto-Sombra Texto-productCreate Titulo-productCreate">Edicion de Productos</div>
-     
-             <div class="Titulos d-flex justify-center">
-          <div class="Resumen-productCreate">
-            <div class="Titulos d-flex justify-center">
+      if (category == '' || category == 'Elegi' || category == null) {
+        alert('Seleccione una categoria')
+        return false;
+      } else if (name.length < 4) {
+        alert('El nombre debe tener por lo menos 4 caracteres')
+        return false;
+      } else if (name.length > 24) {
+        alert('El nombre debe tener un maximo de 24 caracteres')
+        return false;
+      } else if (isNaN(price)) {
+        alert('Solo se aceptan numeros en el precio')
+        return false;
+      } else if (description.length < 32) {
+        alert('La descripcion debe tener un minimo de 32 caracteres')
+        return false;
+      } else if (description.length > 255) {
+        alert('La descripcion debe tener un maximo de 255 caracteres')
+        return false;
+      }
+    }
 
-          <div class="Producto-Imagen px-2 ">
-                    <div>
-                        <img src="/images/buzonew.jpg" alt="prod">
-                    </div>
-                    <div>
-                        <div class="d-flex flex-row justify-center space margin20">
-                            <button type="button" class="Button-style">Agregar</button>
-                            <button type="reset" class="Button-style">Borrar</button>
-                            <button type="button" class="Button-style">Principal</button>
-                         </div>
-                    </div>
-                </div>   
-          <div class="d-flex w-70">
+    let form = document.querySelector("form")
 
-            <div class=" d-flex f-column">
+    form.addEventListener('submit', e => {
+      e.preventDefault();
 
-              <form action="/products/PENDIENTE/refresh?_method=PUT" method="POST">
-                
-              <div class="Producto-Categoria f-grow-5 px-2 ">
-               <label for=""><h4>Seleccione Categoria</h4></label>
-               <select name="categoria" id="">
-                  <option value ="remera"><h4>Remera</h4></option>
-                  <option value="pantalon_largo"><h4>Pantalon Largo</h4></option>
-                  <option value="pantalon_corto"><h4>Pantalon Corto</h4></option>
-                  <option value="camisa"><h4>Camisa</h4></option>
-                  <option value="zapatillas"><h4>Zapatillas</h4></option>
-                  <option value="zapatos"><h4>Zapatos</h4></option>
-                  <option value="campera"><h4>Campera</h4></option>
-               </select>
-              </div>     
-               
-              <div class="Producto-Descripcion f-grow-5 px-2">
-                      <label for="descripcion"><h4>Contanos del producto</h4></label>
-                      <textarea name="descripcion" id="" cols="25" rows="4"></textarea>
-              </div> 
+      validateForm();
+    })
+  </script>
+  <main>
+    <form name='form' action="/products/<%= products.id %>?_method=PUT" method="POST" id='form' enctype="multipart/form-data" onsubmit='return validateForm()'>
 
-              <div class="Producto-Uso f-grow-5 px-2">
-                      <label for=""><h4>Es Nuevo o Usado?</h4></label>
-                      <input type="radio" name="uso" value="Nuevo" checked> Nuevo
-                      <input type="radio" name="uso" value="Usado" checked> Usado
-              </div>
+      <div class="d-flex justify-center bg-image">
+        <div class="fancy-border align-center d-flex justify-center column bg-white">
+          <div class="title-agregar"> Agregar nuevo Producto</div>
 
-              <div class="Producto-Estado f-grow-5 px-2">
-                <label for=""><h4>Como esta tu prenda?</h4></label>
-                <select name="estado" id="">
-                   <option value="impecable"><h4>Impecable!</h4></option>
-                   <option value="buena"><h4>Con algo de uso</h4></option>
-                   <option value="regular"><h4>Tiene algunas cosas</h4></option>
-                </select>
-              </div>     
+          <!-- <div>
+            <select class="create-field" name="category" id="category">
+              <option value="" selected disabled>Categoria</option>
+              <% categories.forEach(category => { %>
+              <option value="<%= category.id %>"><%= category.category %></option>
+              <% }) %>
+            </select>
+          </div> -->
 
-              <div class="Producto-Talle f-grow-5 px-2">
-                <label for="talle"><h4>Cual es el talle?</h4></label>
-                <input type="text" name="talle">
-              </div> 
+          <div>
+            <select class="create-field" name="category" id="category">
+              <option value="" selected disabled>Categoria</option>
+              <% for (let i = 0; i < categories.length; i++) { %>
+              <option value="<%= categories[i].id %>"><%= categories[i].category %></option>
+              <% } %>
+            </select>
+          </div>
 
-              <div class="Producto-Color f-grow-5 px-2">
-                <label for="color"><h4>Que color es?</h4></label>
-                <input type="text" name="color">
-              </div> 
+          <div>
+            <select class="create-field" name="brand" id="brand">
+              <option value="" selected disabled>Marca</option>
+              <% brands.forEach(brand => { %>
+              <option value="<%= brand.id %>"><%= brand.brand %></option>
+              <% }) %>
+            </select>
+          </div>
 
-              <div class="Producto-Marca f-grow-5 px-2">
-                <label for="marca"><h4>Es de alguna marca?</h4></label>
-                <input type="text" name="marca">
-              </div> 
+          <div>
+            <select class="create-field" name="gender" id="gender">
+              <option value="" selected disabled>Genero</option>
+              <% genders.forEach(gender => { %>
+              <option value="<%= gender.id %>"><%= gender.gender %></option>
+              <% }) %>
+            </select>
+          </div>
 
-              <div class="Producto-Precio f-grow-5 px-2">
-                <label for="marca"><h4>A cuanto lo vendes?</h4></label>
-                <input type="text" name="marca">
-              </div> 
+          <div>
+            <input class="create-field" type="text" name="name" id="name" placeholder="Ej: Camiseta Linda"
+              value="<%= typeof old != 'undefined' ? old.name : '' %>">
+            <p style="color: red; font-size: 12px;">
+              <%= typeof errors == 'undefined' ? '' : errors.name ? errors.name.msg : '' %></p>
+          </div>
 
-            </form>
-                    
-                    </div>
-               </div>
-            </div>
-         
-        </div>   
-                    
+          <div>
+            <textarea class="create-field" name="description" id="description" cols="25"
+              rows="4"><%= typeof old != 'undefined' ? old.description : '' %></textarea>
+            <p style="color: red; font-size: 12px;">
+              <%= typeof errors == 'undefined' ? '' : errors.description ? errors.description.msg : '' %></p>
+          </div>
+
+          <div>
+            <input class="create-field" type="text" name="price" id="price" placeholder="Ej: 4560"
+              value="<%= typeof old != 'undefined' ? old.price : '' %>">
+            <p style="color: red; font-size: 12px;">
+              <%= typeof errors == 'undefined' ? '' : errors.price ? errors.price.msg : '' %></p>
+          </div>
+
+          <div>
+            <input type="file" id="image" name="image">
+            <p style="color: red; font-size: 12px;">
+              <%= typeof errors == 'undefined' ? '' : errors.image ? errors.image.msg : '' %></p>
+          </div>
+
+          <div class="d-flex button-create-space">
+            <button type="submit" class="button2" id="button-submit">Agregar</button>
+            <button type="reset" class="button2" id="button-reset">Restaurar Campos</button>
+          </div>
+
+        </div>
       </div>
-
-    </div>
-      
-    </main> -->
-    <main>
-      <h1>Editar producto</h1>
-    <form action="/products/<%=product.id%>/edit" method="POST">
-        <div>
-            <label for="">name</label>
-            <input type="text" name="name" value="<%=product.name%>">
-        </div>
-        <div>
-            <label for="">description</label>
-            <input type="text" name="description" value="<%=product.description%>">
-        </div>
-        <div>
-            <label for="">price</label>
-            <input type="text" name="price" value="<%=product.price%>">
-        </div>       
-        <button type="submit">Editar</button>
     </form>
-    </main>
+  </main>
 
-    <%- include('../partials/footer') %> 
+  <%- include('../partials/footer') %>
 
 </body>
+
 </html>

@@ -4,53 +4,20 @@
   <link rel='stylesheet' href='/stylesheets/common.css' />
   <link rel='stylesheet' href='/stylesheets/social.css' />
   <link rel='stylesheet' href='/stylesheets/header.css' />
+  <link rel='stylesheet' href='/stylesheets/footer.css' />
 
 </head>
   <body>
     <%- include('../partials/social') %> 
     <%- include('../partials/header') %> 
     <%- include('../partials/errors') %> 
-    <script>
-      function validateForm() {
-        var user = document.form.user.value;
-        var password = document.form.password.value;       
-        var email = document.form.email.value;
- 
-        if (user == null || user == '') {
-          alert('El usuario no puede estar vacio');
-          console.log('El usuario no puede estar vacio');
-          return false;
-        } else if (user.length < 2) {
-          alert('El usuario debe tener por lo menos 2 caracteres')
-          console.log('El usuario debe tener por lo menos 2 caracteres')
-          return false;
-        } else if (password.length < 6) {
-          alert('La contraseña debe tener por lo menos 6 caracteres')
-          console.log('La contraseña debe tener por lo menos 6 caracteres')
-          return false;
-        }
- 
-        var atposition = email.indexOf('@');;
-        var dotposition = email.lastIndexOf('.')
-        
-        if (atposition<1 || dotposition<atposition+2 || dotposition+2>=email.length) {
-          alert('Por favor inrese un email valido');
-          return false;
-        }
-      }
-
-      form.addEventListener('submit', e => {
-        e.preventDefault();
-
-        validateForm();
-      })
-    </script>
+    <script src="/scripts/register.js"></script>
 
     
-    <form name='form' action="/auth/register" class="login" method="POST" enctype="multipart/form-data" id='form' onsubmit="return validateForm()">
+    <form name='form' action="/auth/register" class="register-site" method="POST" enctype="multipart/form-data">
       <h1>CREÁ TU CUENTA</h1>
       <div class="login-box">
-        <div class="login-input">
+        <div class="login-input" id="userbox">
           <i class="fas fa-user"></i>
           <input
             type="text"
@@ -93,10 +60,10 @@
           />
         </div>
 
-        <div class="Remember">
-          <input class="check" type="checkbox" name="termsnconds" id="termsnconds" />Acepto los
+        <!-- <div class="Remember">
+          <input class="check" type="checkbox" name="termsnconds" id="termsnconds" value="termsnconds"/>Acepto los
           <a href="#">Términos y Condiciones</a>
-        </div>
+        </div> -->
 
         <input type="submit" value="Confirmar" class="button" onclick='validateForm()' />
 

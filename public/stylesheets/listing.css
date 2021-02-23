@@ -35,7 +35,7 @@ body {
   background-color: rgb(24, 177, 194);
   border-width: 30px;
   width: 70%;
-  margin: 2% 5% 2% 5%;
+  margin: 2% 0% 2% 0%;
 }
 
 .product-image .front-image {
@@ -57,16 +57,33 @@ body {
   left: 0;
   right: 0;
   color: #fff;
-  background: rgb(24, 177, 194);
+  /* background: rgba(24, 177, 194, 1); */
+  background: #1695a4;
+  /* background-color: #230c33; */
   text-align: center;
   text-transform: uppercase;
   padding: 5% 0;
   transition: all 200ms ease-out;
 }
 
+.button-filter {
+  text-align: center;
+  border: none;
+  width: 70%;
+  color: #eaeaea;
+  background-color: #230c33;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .quick-view:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+.fit-contain {
+  object-fit: contain;
 }
 
 .all-cats {
