@@ -2,7 +2,9 @@
 
 How to run: 
 Run database/scripts/structure.sql and then data.sql
+
 npm start
+
 http://localhost:3000/
 
 
